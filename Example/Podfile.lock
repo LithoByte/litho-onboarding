@@ -1,0 +1,66 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - fuikit/Core (0.1.5)
+  - LithoOnboarding (0.1.0):
+    - fuikit/Core
+    - LithoOperators
+    - LithoUtils
+  - LithoOperators (0.1.4):
+    - Prelude
+  - LithoUtils (0.1.0):
+    - fuikit/Core
+    - LithoOperators
+    - LithoUtils/Core (= 0.1.0)
+  - LithoUtils/Core (0.1.0):
+    - fuikit/Core
+    - LithoOperators
+  - Prelude (3.0.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - fuikit/Core (from `https://github.com/ThryvInc/fuikit`)
+  - LithoOnboarding (from `../`)
+  - LithoOperators (from `https://github.com/ThryvInc/LithoOperators`)
+  - LithoUtils (from `https://github.com/ThryvInc/litho-utils`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - Prelude
+
+EXTERNAL SOURCES:
+  fuikit:
+    :git: https://github.com/ThryvInc/fuikit
+  LithoOnboarding:
+    :path: "../"
+  LithoOperators:
+    :git: https://github.com/ThryvInc/LithoOperators
+  LithoUtils:
+    :git: https://github.com/ThryvInc/litho-utils
+
+CHECKOUT OPTIONS:
+  fuikit:
+    :commit: 7d5c8329b834e8a415cf5217a2d4a118281adcc9
+    :git: https://github.com/ThryvInc/fuikit
+  LithoOperators:
+    :commit: 9064e4de52949eb22bd025774a41df059eb359be
+    :git: https://github.com/ThryvInc/LithoOperators
+  LithoUtils:
+    :commit: 450a9a84fb7be098152584495afc587d6c85a138
+    :git: https://github.com/ThryvInc/litho-utils
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  fuikit: 976080e1c04037e01d14541135a104cb208d8c0d
+  LithoOnboarding: f6bff40221fa94315e2ee222f595cecfbb2dc602
+  LithoOperators: 8fc0c6a49e34a8d1ca01b777844f58e36c062d9f
+  LithoUtils: 672d313a7fede3968e22f082b293cbc01ebcb7f0
+  Prelude: fe4cc0fd961d34edf48fe6b04d05c863449efb0a
+
+PODFILE CHECKSUM: 74559738b485356f027da9bac5f8cd334335e92b
+
+COCOAPODS: 1.10.0

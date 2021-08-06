@@ -1,0 +1,2015 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B6C99D3ED3787755BB23BDB7DC7B13E /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02C0C2ED1FB4F9C15BA002AA6C05033C /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8621268E75D8F9BDEC2535610FA5D02 /* Configurable.swift */; };
+		048ED276EE3971BEA12626D62C93EC41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DBD925A2FE7354796E596495863275 /* Foundation.framework */; };
+		08C6BCFFFD9CA70E5E5EAE8CCFBD845E /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33EB07828EAD81974B2523489FA1AB /* UIImage+Resize.swift */; };
+		09802EF4EC0B7A3F82E74CD51C3692BD /* LithoOnboarding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DC7D1EFD6074B89A3507CB070AB3FE /* LithoOnboarding-dummy.m */; };
+		1106F540435158BB96C47CDAFD105BF5 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB4580AA8EF52DE49293BAE42BE657 /* UIViewController+DismissKeyboard.swift */; };
+		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8548F6A77B72F26AFB35F72C7BAAC8B2 /* UIApplication+StrictKeyWindow.m */; };
+		121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEF29CAE8342D6A70C91D578FA309E7 /* XCTest.framework */; };
+		12BDE1C49B3EE34D4E81FD36B840789B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DBD925A2FE7354796E596495863275 /* Foundation.framework */; };
+		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3EF9A4C394DC0A5433B649DEAC2060 /* UIImage+Diff.m */; };
+		2176D6FFEE86FB4506ACA7C83EBB7EB4 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A834B52F972D63AF1B606D9DD95D4 /* Compose.swift */; };
+		2305384F9905CEC95D2D8F137FEF82C1 /* BaseOnboardingView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 69C5F5086BC60416A31E886EE6669522 /* BaseOnboardingView.xib */; };
+		23D7F6841DD4F55A12C85CF1A45D5197 /* fuikit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1771592E03A4F8AAA36ADE91DD13B08 /* fuikit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C71E59A561A4D753B3A782D03F480A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DBD925A2FE7354796E596495863275 /* Foundation.framework */; };
+		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AB277ADEA78ED6736EE10A675D46AD /* UIImage+Compare.m */; };
+		2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D51D8727A2DAADEABA3B6B5CBB4C2F /* QuartzCore.framework */; };
+		30B3B0C08FD5EDBCBEDFA33A495DE8F0 /* UIViewController+PushPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81292CD189C200E2A6C578F75D1CB20 /* UIViewController+PushPop.swift */; };
+		32C8E0FD4245DCF3D9039CA79A7A5439 /* iOSFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA5E7EAB3865A05B70B91019DA5DF7 /* iOSFunctions.swift */; };
+		345A23A7CEB18C884B09DD4AB5C9610B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DBD925A2FE7354796E596495863275 /* Foundation.framework */; };
+		346D6BF76D585B94004C3EA98D6BE68C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2AEDCA0A62B404897B7E87F34147CC /* Alert.swift */; };
+		371C27D871916901F5C6DD43A9F6C374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DBD925A2FE7354796E596495863275 /* Foundation.framework */; };
+		37530140CE29CB27DE842F9E6B020462 /* FUITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD87AD7E6CA5BA09E88AB528EFED85 /* FUITextViewDelegate.swift */; };
+		3E79F19B6492E9677259435F6093D242 /* Pods-LithoOnboarding_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8127938309F52BEA30377D56ABAB3B02 /* Pods-LithoOnboarding_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D2CD6C0DFD3826B2A8A9A4C2F9E06AF /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44D1B4665472421804C1FA3A261AB9EE /* Pods-LithoOnboarding_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C45B56F0760FA37A5D5788A2FE4B3128 /* Pods-LithoOnboarding_Example-dummy.m */; };
+		460A25864D9F6D0FD5863A8EAB03FFB8 /* Prelude-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E29BE101036DF796578448A869D5836F /* Prelude-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ABE5A9E6654C947C10F426AB01D7781 /* LithoUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF13A82E77245544BAA415852DD408B9 /* LithoUtils.framework */; };
+		4DF430038A58FABC88A3A75D9EEE556E /* Pods-LithoOnboarding_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06001691B4BDF1005D8438260913237A /* Pods-LithoOnboarding_Tests-dummy.m */; };
+		4ECBD6A0A9639BDCE443D5866B847E68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DBD925A2FE7354796E596495863275 /* Foundation.framework */; };
+		5555E55DB7377AC1B04F657638AF04B0 /* FUITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DC6E490404AF5983DB2EAC3B0E6231 /* FUITableViewDelegate.swift */; };
+		5977569D55E02D656CC0FD68939C1FC2 /* FUIImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4E272F8CF0DC57302A61DB2D8D9DC /* FUIImagePickerDelegate.swift */; };
+		5B38B754C0234F7836CA6BA48A16D6BD /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE721CF9F281F97F3A886ABBF720268 /* UIColor+hex.swift */; };
+		5DBF5326A4A41B7784F1598F508BE967 /* Prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C82E5BCADEA88E8C70FFF7B67FD9E3 /* Prelude.swift */; };
+		668F6F7F53794507D58FFC19E6EBADAB /* LithoOperators-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36820DBB73C0205D3F4A4B09D1A045 /* LithoOperators-dummy.m */; };
+		66CC6E3C4F7D95A4941AA88C0561EC40 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803E008658324BC6A219BB4AB494244 /* Curry.swift */; };
+		68161A5E63A922A13AC084A13F35C00A /* fuikit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D473DF89F3A64B2072A896FA06247A84 /* fuikit.framework */; };
+		6BD60D312A02EE12032C70F5F40DBD95 /* LithoOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC048F3F0E4700339EB619CD14504E /* LithoOperators.swift */; };
+		6CB2BCD3F4638515DE3CFDEF4D0FC710 /* FUICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBC81698533B4BB2055DB46AC6A5CE /* FUICollectionViewDelegate.swift */; };
+		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B22A66B4DE0971C065A4BDFEDB0FDE2F /* FBSnapshotTestCase-dummy.m */; };
+		7D17146B0D3D948B01626FBE5A571711 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C537EAD031772FABE5139AEF2BC93BD /* Styles.swift */; };
+		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 641257B7BDDCD4BA8DDF6A36291A1148 /* FBSnapshotTestController.m */; };
+		891BC5ABE26DEC204E884A16E4AB3232 /* fuikit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D473DF89F3A64B2072A896FA06247A84 /* fuikit.framework */; };
+		8AB81F6C7C872D1F2C550B90005035D4 /* Prelude-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E24832DB385CD19B9D0A16FDB82D21 /* Prelude-dummy.m */; };
+		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7704D6A4A7867F19A77E9AE2D1FE0AF1 /* FBSnapshotTestCase.m */; };
+		8E0231B7DE0821BC06156AC3EBCC6493 /* UIViewController+BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D990C067A523DCD497F254745B20AA /* UIViewController+BarButtonItem.swift */; };
+		8F880402D55013DBA8EFF07C3F38CAD6 /* FUITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3D94BD5F79EBE31456CBB485D0E24 /* FUITableViewDataSource.swift */; };
+		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = D315A817DE018E6B55CD079C25597B8A /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		903E3B3F9CAB8DFAD1FD8054B259F4F8 /* CanIndicateActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E95EF9AA1FA69746277AA810382E27D /* CanIndicateActivity.swift */; };
+		9AFF0AD0F5C1361D2764D7F9B3F74ACE /* BaseOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA0EB33F82CC8CED4A096311BA190B1 /* BaseOnboardingView.swift */; };
+		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC980FF23ED28C0B83E8498C2535640 /* SwiftSupport.swift */; };
+		A1F539CE75BF16119DF3D29043FF058A /* FUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D894527CE4470D0A88586E15382655 /* FUIViewController.swift */; };
+		A28CB880DA80D91681DEA6FF8815F14C /* FUICollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD30F282152CF7E00A01D31ACB1873E /* FUICollectionViewViewController.swift */; };
+		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7DB959C44D8FD4CF2C29B1484726D7 /* UIImage+Snapshot.m */; };
+		A7CE6C1E82A3E6E0279FE6EC61395840 /* LithoOperators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD00E0CA412058FDEF5206616E458D0 /* LithoOperators.framework */; };
+		AB97E95D2F96A3A5D644E9100C20362E /* BindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4ED59FBC20598DFAAD2AB868726303 /* BindViewModel.swift */; };
+		B0820FA7899D83437B4DBE52077AF4CB /* LithoOnboarding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D569869EE0FEAA4805A28EE3863755B1 /* LithoOnboarding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B263558200218DC5CD917C03A390A300 /* Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4483FCB878F9228AFCCDFD682A550C5E /* Flip.swift */; };
+		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = A744878A0A872978C16D30DDF706DF9F /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B871F47A15EC6CF5B9584E55BDE09EA7 /* FUITableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDC12695B7D5A5650E37348794D7AB /* FUITableViewViewController.swift */; };
+		B9C7034563E0402B87C18F234169F278 /* LithoOperators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD00E0CA412058FDEF5206616E458D0 /* LithoOperators.framework */; };
+		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C92940559530F2D11F73ABADC5D8990 /* UIKit.framework */; };
+		BD94A140D8F01688344959060D2F5B51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DBD925A2FE7354796E596495863275 /* Foundation.framework */; };
+		C09B186E71C1B2B069C5DB039E8900FA /* FUISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A6D0DC6063225F7B1EC0FB7B6893 /* FUISearchBarDelegate.swift */; };
+		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = B9052FA856396794AD3AE22E66FEDFBD /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DBD925A2FE7354796E596495863275 /* Foundation.framework */; };
+		CB3BC79467E65FF2084DF39CB3EF0494 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC9C12828BBCC62E5CBB7FE87AA976D /* Optional.swift */; };
+		CB44D15008104D11DC7680530D660A88 /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB40BA957E20116F155EFC82D330447 /* Fix.swift */; };
+		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 15DBA9638EEDCC9067B1346187751C39 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D7E160D84B112E678C37E6641269380F /* LithoUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E276D153978A1A618D6095E02E8080EB /* LithoUtils-dummy.m */; };
+		DA734ADBA8BEAE0C804009059D6BB53F /* FUITableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB95C59676A53295B2855EE97E32713 /* FUITableViewViewController.xib */; };
+		DD908A95BFA93766C5AA894B35CD74A9 /* fuikit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B4733DB91457C0BD01145707E9D42B /* fuikit-dummy.m */; };
+		E342798EBE668DFB673E1F782E0004D3 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983F4A175F2D7ED6910C228996892EE9 /* Application.swift */; };
+		E45B47E79573E68FD36330621A5BCF3B /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE255E4200AF21D1BD1AA1943562B1D /* Styles.swift */; };
+		E70BAE5807E0762B5641F6B30A3A412D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03257136580122EE0423A57946B36548 /* OnboardingViewController.swift */; };
+		E790D92D6AE15ACB05BEF47525E68FF3 /* LithoOperators-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F8CAA620B79DF3DAFB4DFCB16A3CA6 /* LithoOperators-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 37006FCEDEF61F0D4F260DC08EBFCBFA /* FBSnapshotTestCasePlatform.m */; };
+		EB22074F366D974C471FF03452F650B8 /* FUICollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB97E21D06AC456A6E5F0447BADDAEE /* FUICollectionViewViewController.xib */; };
+		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = E734F1C09C82D743FB4B59A655ABAD13 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F2A1580B5EFAC54EE44119ECDE27C125 /* FUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FBBA752D410B8CB18E53C94EDE28E /* FUITextFieldDelegate.swift */; };
+		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ECC72492AFFD6C017C37637AD71B111 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0FA59AA516A9DD5D3BE607B69E5EAE /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7477E88D7BE72130BC589F79B31AD4A7 /* Prelude.framework */; };
+		FB1055EE1DD389DAB3972B84593511E2 /* LithoUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89959D6393553DB12C9DBEE27893DE36 /* LithoUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD8D559676060EF800C4FE3D9025D45B /* Pods-LithoOnboarding_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90EF2BED513A3C51206424C555024913 /* Pods-LithoOnboarding_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFF0AF6D093BD9ADD4BC7E50F8C1816A /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54668C4F208EECC234A2ECE038097F /* Tuple.swift */; };
+		FFFA921AE6E789ED484F47B293DEB574 /* UIWindow+Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318968F659530E7EBA07A880D9A5847F /* UIWindow+Present.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E4533B3CCAC1D2FE54450A932F0E75B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77FDE97C0A27358B35623EE793130529;
+			remoteInfo = LithoOnboarding;
+		};
+		349AEC2CA8BEEBA142239BE40094AAC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		4C040A32CE1C0A5F8FD50BC576E7D041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C04700E22229A736E5C110BBF44E6112;
+			remoteInfo = fuikit;
+		};
+		5284C419BA1B45254B440C8F1C6120DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C1AB688A5C9DE02C75AC815D03E671F;
+			remoteInfo = LithoUtils;
+		};
+		66D736E8E5CA16F87F6FACCC168C9942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80195736004BAB319C2BF172275F664D;
+			remoteInfo = "Pods-LithoOnboarding_Example";
+		};
+		6EF8A6E57D8B3E2E9CB22DCC0C00B80F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C04700E22229A736E5C110BBF44E6112;
+			remoteInfo = fuikit;
+		};
+		73476C074135C9155AF89309DFA233B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDE9651E3D91FEDF74EB17C3CBDD3742;
+			remoteInfo = Prelude;
+		};
+		769AB34C1B51F588B8BA12AC1B8152F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDE9651E3D91FEDF74EB17C3CBDD3742;
+			remoteInfo = Prelude;
+		};
+		8B7EE311A77B3823CF1407F869B2F897 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23B1651D4D0DDA611CCBAFB8BFEED54;
+			remoteInfo = LithoOperators;
+		};
+		A9800F97C6AE0AFFB4D62061DFBCE9FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C1AB688A5C9DE02C75AC815D03E671F;
+			remoteInfo = LithoUtils;
+		};
+		C36247037BEB7DD5D6416F977FC0A382 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C04700E22229A736E5C110BBF44E6112;
+			remoteInfo = fuikit;
+		};
+		D31490F8DED2BDB00C3E6A50904293DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23B1651D4D0DDA611CCBAFB8BFEED54;
+			remoteInfo = LithoOperators;
+		};
+		ED5117C4269A1BE93B34E79486CF7062 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23B1651D4D0DDA611CCBAFB8BFEED54;
+			remoteInfo = LithoOperators;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03257136580122EE0423A57946B36548 /* OnboardingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = LithoOnboarding/Classes/Views/OnboardingViewController.swift; sourceTree = "<group>"; };
+		0356FA02DBBBDCEF08D71A2687A79687 /* LithoOnboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoOnboarding.release.xcconfig; sourceTree = "<group>"; };
+		06001691B4BDF1005D8438260913237A /* Pods-LithoOnboarding_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LithoOnboarding_Tests-dummy.m"; sourceTree = "<group>"; };
+		06AECA3BA394EF855EA676D4CEE97819 /* LithoOperators.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoOperators.release.xcconfig; sourceTree = "<group>"; };
+		07A8E74945E37F6B9922579B1601C8C5 /* LithoOnboarding.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LithoOnboarding.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0BB4E272F8CF0DC57302A61DB2D8D9DC /* FUIImagePickerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUIImagePickerDelegate.swift; path = fuikit/Classes/Core/FUIImagePickerDelegate.swift; sourceTree = "<group>"; };
+		0F36820DBB73C0205D3F4A4B09D1A045 /* LithoOperators-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LithoOperators-dummy.m"; sourceTree = "<group>"; };
+		0FA79DABE243BDFB39A7AF8A57994268 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
+		0FC679A41D0D34FD873B7D9F9E6BE8BB /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10016F2944B285AA1318EEA9E96C83BC /* fuikit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = fuikit.modulemap; sourceTree = "<group>"; };
+		11DBD925A2FE7354796E596495863275 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		11E939E3E3320399CC4A44739A91B2BA /* LithoOnboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LithoOnboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15DBA9638EEDCC9067B1346187751C39 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fuikit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1803E008658324BC6A219BB4AB494244 /* Curry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curry.swift; path = Prelude/Curry.swift; sourceTree = "<group>"; };
+		194DBEDD74C67CC3286692CD06FA128C /* LithoOnboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoOnboarding.debug.xcconfig; sourceTree = "<group>"; };
+		1CD30F282152CF7E00A01D31ACB1873E /* FUICollectionViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUICollectionViewViewController.swift; path = fuikit/Classes/Core/FUICollectionViewViewController.swift; sourceTree = "<group>"; };
+		229A834B52F972D63AF1B606D9DD95D4 /* Compose.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compose.swift; path = Prelude/Compose.swift; sourceTree = "<group>"; };
+		246DCA0FF1489FD84ECDCA86363D804F /* Pods-LithoOnboarding_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LithoOnboarding_Example.modulemap"; sourceTree = "<group>"; };
+		2ABE86AFDFAF2228B2659C66BC1A5226 /* Pods-LithoOnboarding_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LithoOnboarding_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2B6C99D3ED3787755BB23BDB7DC7B13E /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		2BE721CF9F281F97F3A886ABBF720268 /* UIColor+hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+hex.swift"; path = "LithoUtils/Classes/Base/Extensions/UIColor+hex.swift"; sourceTree = "<group>"; };
+		318968F659530E7EBA07A880D9A5847F /* UIWindow+Present.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWindow+Present.swift"; path = "LithoUtils/Classes/Base/Extensions/UIWindow+Present.swift"; sourceTree = "<group>"; };
+		33E24832DB385CD19B9D0A16FDB82D21 /* Prelude-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Prelude-dummy.m"; sourceTree = "<group>"; };
+		34E8F7C5E2314B46329B2D2AC2FC6EA3 /* Pods_LithoOnboarding_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LithoOnboarding_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37006FCEDEF61F0D4F260DC08EBFCBFA /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		3999AFAB61160EAB70ECC19EE1148CB9 /* Pods-LithoOnboarding_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LithoOnboarding_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3AE255E4200AF21D1BD1AA1943562B1D /* Styles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Styles.swift; path = LithoOnboarding/Classes/Views/Styles.swift; sourceTree = "<group>"; };
+		3C4ED59FBC20598DFAAD2AB868726303 /* BindViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BindViewModel.swift; path = LithoUtils/Classes/Post13/BindViewModel.swift; sourceTree = "<group>"; };
+		3CB97E21D06AC456A6E5F0447BADDAEE /* FUICollectionViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FUICollectionViewViewController.xib; path = fuikit/Classes/Core/FUICollectionViewViewController.xib; sourceTree = "<group>"; };
+		3ECC72492AFFD6C017C37637AD71B111 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		3F3149C71E426719A7FB7DFC1C91BF03 /* LithoOperators.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LithoOperators.modulemap; sourceTree = "<group>"; };
+		41BA50E86CB9F1205DC6EC3ABB57EB28 /* Pods-LithoOnboarding_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LithoOnboarding_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		437A5EBF334352CABAE49ED9024A6D0E /* LithoUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LithoUtils-Info.plist"; sourceTree = "<group>"; };
+		443900383093B46D45F2177A6732017C /* Pods-LithoOnboarding_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LithoOnboarding_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4483FCB878F9228AFCCDFD682A550C5E /* Flip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flip.swift; path = Prelude/Flip.swift; sourceTree = "<group>"; };
+		47CD8E9D21A2F848EEB79C5AF8480E8B /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		4BA173C46F7FDB5531B986CB0163B4B1 /* LithoOperators-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LithoOperators-prefix.pch"; sourceTree = "<group>"; };
+		4C537EAD031772FABE5139AEF2BC93BD /* Styles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Styles.swift; path = LithoUtils/Classes/Base/Functions/Styles.swift; sourceTree = "<group>"; };
+		4CB81143E6A93B90714C0999C0B81820 /* LithoUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LithoUtils-prefix.pch"; sourceTree = "<group>"; };
+		4EC9C12828BBCC62E5CBB7FE87AA976D /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Prelude/Optional.swift; sourceTree = "<group>"; };
+		4FEF29CAE8342D6A70C91D578FA309E7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		52829A5145D6DDB5D8DD6AFF9AF57EC9 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		52D51D8727A2DAADEABA3B6B5CBB4C2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		587204AE07B25F8D83296F33CEC4FE2E /* LithoUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LithoUtils.modulemap; sourceTree = "<group>"; };
+		59DC7D1EFD6074B89A3507CB070AB3FE /* LithoOnboarding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LithoOnboarding-dummy.m"; sourceTree = "<group>"; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA0EB33F82CC8CED4A096311BA190B1 /* BaseOnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseOnboardingView.swift; path = LithoOnboarding/Classes/Views/BaseOnboardingView.swift; sourceTree = "<group>"; };
+		607276FD68158E9D7C2C1138218D322D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		613474421597CD1115AA83EFE96B44CC /* fuikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.release.xcconfig; sourceTree = "<group>"; };
+		62EC048F3F0E4700339EB619CD14504E /* LithoOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LithoOperators.swift; path = Sources/LithoOperators/Classes/LithoOperators.swift; sourceTree = "<group>"; };
+		641257B7BDDCD4BA8DDF6A36291A1148 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		64F8CAA620B79DF3DAFB4DFCB16A3CA6 /* LithoOperators-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LithoOperators-umbrella.h"; sourceTree = "<group>"; };
+		69C5F5086BC60416A31E886EE6669522 /* BaseOnboardingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = BaseOnboardingView.xib; path = LithoOnboarding/Classes/Views/BaseOnboardingView.xib; sourceTree = "<group>"; };
+		6A040B34B45889DAE7FDD9E889DAD1F4 /* LithoUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoUtils.debug.xcconfig; sourceTree = "<group>"; };
+		6A4CE63D424C08BCF495DBF8257378AF /* fuikit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.debug.xcconfig; sourceTree = "<group>"; };
+		6D2CD6C0DFD3826B2A8A9A4C2F9E06AF /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		6E95EF9AA1FA69746277AA810382E27D /* CanIndicateActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CanIndicateActivity.swift; path = LithoUtils/Classes/Base/Models/CanIndicateActivity.swift; sourceTree = "<group>"; };
+		6F2AEDCA0A62B404897B7E87F34147CC /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = LithoUtils/Classes/Base/Alert/Alert.swift; sourceTree = "<group>"; };
+		6F4C1AA6E6B678063C6C3BFCFEE860C6 /* Pods-LithoOnboarding_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LithoOnboarding_Tests.modulemap"; sourceTree = "<group>"; };
+		6F7FBBA752D410B8CB18E53C94EDE28E /* FUITextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITextFieldDelegate.swift; path = fuikit/Classes/Core/FUITextFieldDelegate.swift; sourceTree = "<group>"; };
+		7477E88D7BE72130BC589F79B31AD4A7 /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CDC12695B7D5A5650E37348794D7AB /* FUITableViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITableViewViewController.swift; path = fuikit/Classes/Core/FUITableViewViewController.swift; sourceTree = "<group>"; };
+		7704D6A4A7867F19A77E9AE2D1FE0AF1 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		79F0A6D0DC6063225F7B1EC0FB7B6893 /* FUISearchBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUISearchBarDelegate.swift; path = fuikit/Classes/Core/FUISearchBarDelegate.swift; sourceTree = "<group>"; };
+		8127938309F52BEA30377D56ABAB3B02 /* Pods-LithoOnboarding_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LithoOnboarding_Tests-umbrella.h"; sourceTree = "<group>"; };
+		819A557AF41E7A892EC44E35AF391119 /* LithoUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoUtils.release.xcconfig; sourceTree = "<group>"; };
+		81CBC81698533B4BB2055DB46AC6A5CE /* FUICollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUICollectionViewDelegate.swift; path = fuikit/Classes/Core/FUICollectionViewDelegate.swift; sourceTree = "<group>"; };
+		83DC6E490404AF5983DB2EAC3B0E6231 /* FUITableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITableViewDelegate.swift; path = fuikit/Classes/Core/FUITableViewDelegate.swift; sourceTree = "<group>"; };
+		8548F6A77B72F26AFB35F72C7BAAC8B2 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		89959D6393553DB12C9DBEE27893DE36 /* LithoUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LithoUtils-umbrella.h"; sourceTree = "<group>"; };
+		89B98EEB9C5F8AE8D8D077F5EE16D989 /* Pods-LithoOnboarding_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LithoOnboarding_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8AD00E0CA412058FDEF5206616E458D0 /* LithoOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LithoOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA29D23DE21D83247DD5B63F0EB9A3C /* Pods-LithoOnboarding_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LithoOnboarding_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		90EF2BED513A3C51206424C555024913 /* Pods-LithoOnboarding_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LithoOnboarding_Example-umbrella.h"; sourceTree = "<group>"; };
+		91E3D94BD5F79EBE31456CBB485D0E24 /* FUITableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITableViewDataSource.swift; path = fuikit/Classes/Core/FUITableViewDataSource.swift; sourceTree = "<group>"; };
+		93CD87AD7E6CA5BA09E88AB528EFED85 /* FUITextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITextViewDelegate.swift; path = fuikit/Classes/Core/FUITextViewDelegate.swift; sourceTree = "<group>"; };
+		97C82E5BCADEA88E8C70FFF7B67FD9E3 /* Prelude.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Prelude.swift; path = Prelude/Prelude.swift; sourceTree = "<group>"; };
+		982CC9E94CFD91E47EEB21BF690D40E8 /* Prelude.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Prelude.debug.xcconfig; sourceTree = "<group>"; };
+		983F4A175F2D7ED6910C228996892EE9 /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Prelude/Application.swift; sourceTree = "<group>"; };
+		9C92940559530F2D11F73ABADC5D8990 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1771592E03A4F8AAA36ADE91DD13B08 /* fuikit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-umbrella.h"; sourceTree = "<group>"; };
+		A2B4733DB91457C0BD01145707E9D42B /* fuikit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fuikit-dummy.m"; sourceTree = "<group>"; };
+		A744878A0A872978C16D30DDF706DF9F /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		A8621268E75D8F9BDEC2535610FA5D02 /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = LithoUtils/Classes/Base/Extensions/Configurable.swift; sourceTree = "<group>"; };
+		A9CA5E7EAB3865A05B70B91019DA5DF7 /* iOSFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iOSFunctions.swift; path = LithoUtils/Classes/Base/Functions/iOSFunctions.swift; sourceTree = "<group>"; };
+		AF13A82E77245544BAA415852DD408B9 /* LithoUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LithoUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF37E4FE44B5005565D1D6F4BB8686D8 /* LithoOnboarding-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LithoOnboarding-Info.plist"; sourceTree = "<group>"; };
+		B22A66B4DE0971C065A4BDFEDB0FDE2F /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		B8AB277ADEA78ED6736EE10A675D46AD /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		B9052FA856396794AD3AE22E66FEDFBD /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		BA33EB07828EAD81974B2523489FA1AB /* UIImage+Resize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Resize.swift"; path = "LithoUtils/Classes/Base/Extensions/UIImage+Resize.swift"; sourceTree = "<group>"; };
+		BBF95A75A172802A47FB078965E5B2C0 /* LithoOnboarding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LithoOnboarding.modulemap; sourceTree = "<group>"; };
+		BD3EF9A4C394DC0A5433B649DEAC2060 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		BDB40BA957E20116F155EFC82D330447 /* Fix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fix.swift; path = Prelude/Fix.swift; sourceTree = "<group>"; };
+		C45B56F0760FA37A5D5788A2FE4B3128 /* Pods-LithoOnboarding_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LithoOnboarding_Example-dummy.m"; sourceTree = "<group>"; };
+		C60BF8F50AB9B6C1889024A8E91C7E62 /* LithoOnboarding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LithoOnboarding-prefix.pch"; sourceTree = "<group>"; };
+		CA0E227F53295A1E0012BFEA4F764B7A /* Pods-LithoOnboarding_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LithoOnboarding_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBB95C59676A53295B2855EE97E32713 /* FUITableViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FUITableViewViewController.xib; path = fuikit/Classes/Core/FUITableViewViewController.xib; sourceTree = "<group>"; };
+		D115576C85F820B62F6C146A2903CA50 /* LithoUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LithoUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28752D3052E7FA0702C3AAE32E64AA7 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		D29F0E52B068C07C429B20819C29DBC1 /* Pods-LithoOnboarding_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LithoOnboarding_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D315A817DE018E6B55CD079C25597B8A /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		D3661DBC67BD03D4A66B217B66545D6D /* Prelude-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Prelude-Info.plist"; sourceTree = "<group>"; };
+		D473DF89F3A64B2072A896FA06247A84 /* fuikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fuikit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D569869EE0FEAA4805A28EE3863755B1 /* LithoOnboarding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LithoOnboarding-umbrella.h"; sourceTree = "<group>"; };
+		D5F789D2E01ABB2C6F6D0279EF3C0CE1 /* fuikit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "fuikit-Info.plist"; sourceTree = "<group>"; };
+		D7777DF6E9563E8483D28F78804F167D /* Prelude.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Prelude.release.xcconfig; sourceTree = "<group>"; };
+		D9BBB1BE7E667CF57E3237D04A6FAE9B /* Prelude.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Prelude.modulemap; sourceTree = "<group>"; };
+		DB6386F262F8ED7CEC83C85395EE72C3 /* Pods-LithoOnboarding_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LithoOnboarding_Example-Info.plist"; sourceTree = "<group>"; };
+		E09931E60687F75E11FE88597CAC2E5B /* Pods-LithoOnboarding_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LithoOnboarding_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E09F2186E4A4B6DA977CC6FE387C2A03 /* fuikit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-prefix.pch"; sourceTree = "<group>"; };
+		E1CB4580AA8EF52DE49293BAE42BE657 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+DismissKeyboard.swift"; path = "LithoUtils/Classes/Base/Extensions/UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
+		E276D153978A1A618D6095E02E8080EB /* LithoUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LithoUtils-dummy.m"; sourceTree = "<group>"; };
+		E29BE101036DF796578448A869D5836F /* Prelude-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Prelude-umbrella.h"; sourceTree = "<group>"; };
+		E2C7BD7A3B86B0E48AA00C7704150739 /* LithoOperators-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LithoOperators-Info.plist"; sourceTree = "<group>"; };
+		E5D894527CE4470D0A88586E15382655 /* FUIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUIViewController.swift; path = fuikit/Classes/Core/FUIViewController.swift; sourceTree = "<group>"; };
+		E734F1C09C82D743FB4B59A655ABAD13 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		E9E8D3F9280F8861EF8933A6DA3A4E99 /* Prelude-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Prelude-prefix.pch"; sourceTree = "<group>"; };
+		EA225D5BCA44345A75EA4C73C6AD6CC0 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		EA54668C4F208EECC234A2ECE038097F /* Tuple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tuple.swift; path = Prelude/Tuple.swift; sourceTree = "<group>"; };
+		ECC980FF23ED28C0B83E8498C2535640 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		EF8D8F3F17A40B97B3E1E2BA4933530F /* Pods_LithoOnboarding_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LithoOnboarding_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02BB82B3FFD1B4A5BE1C7443584444C /* LithoOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LithoOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F364B207A3FFAF55F1C1AF9F0ABCC324 /* Pods-LithoOnboarding_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LithoOnboarding_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F6A512EF3B6F5F0B5BDD3391007F589F /* LithoOperators.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoOperators.debug.xcconfig; sourceTree = "<group>"; };
+		F81292CD189C200E2A6C578F75D1CB20 /* UIViewController+PushPop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+PushPop.swift"; path = "fuikit/Classes/Core/UIViewController+PushPop.swift"; sourceTree = "<group>"; };
+		F8A61F4DC6FA21A42239A636BA70584D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F9D990C067A523DCD497F254745B20AA /* UIViewController+BarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+BarButtonItem.swift"; path = "LithoUtils/Classes/Base/Extensions/UIViewController+BarButtonItem.swift"; sourceTree = "<group>"; };
+		FB7DB959C44D8FD4CF2C29B1484726D7 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		FC33B2C4649119E8597611FD1B072A53 /* Pods-LithoOnboarding_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LithoOnboarding_Tests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		255740569BBE3B12222A8B5643EDBCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C71E59A561A4D753B3A782D03F480A7 /* Foundation.framework in Frameworks */,
+				891BC5ABE26DEC204E884A16E4AB3232 /* fuikit.framework in Frameworks */,
+				B9C7034563E0402B87C18F234169F278 /* LithoOperators.framework in Frameworks */,
+				4ABE5A9E6654C947C10F426AB01D7781 /* LithoUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422252BDA450BEB329B5F5CEFA71F250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECBD6A0A9639BDCE443D5866B847E68 /* Foundation.framework in Frameworks */,
+				FA0FA59AA516A9DD5D3BE607B69E5EAE /* Prelude.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ACD9E6D921DDF77489340E4CCF7EB3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD94A140D8F01688344959060D2F5B51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56CC66B016BCF236C8075EBBCCE571CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371C27D871916901F5C6DD43A9F6C374 /* Foundation.framework in Frameworks */,
+				68161A5E63A922A13AC084A13F35C00A /* fuikit.framework in Frameworks */,
+				A7CE6C1E82A3E6E0279FE6EC61395840 /* LithoOperators.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A523B539555B08DBDA79819EB5C89C9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BDE1C49B3EE34D4E81FD36B840789B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A606A9065B4987E0A56EF53B1504FADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345A23A7CEB18C884B09DD4AB5C9610B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E581515110D66F94F80A6937831489A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */,
+				2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */,
+				BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */,
+				121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A5A8799B4C4B5A209AF7A8B4502D90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048ED276EE3971BEA12626D62C93EC41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0502F9140C6E60B86FE0C91BD7BE4844 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D473DF89F3A64B2072A896FA06247A84 /* fuikit.framework */,
+				8AD00E0CA412058FDEF5206616E458D0 /* LithoOperators.framework */,
+				AF13A82E77245544BAA415852DD408B9 /* LithoUtils.framework */,
+				7477E88D7BE72130BC589F79B31AD4A7 /* Prelude.framework */,
+				7AC80978D84263DFE29027C556223DE9 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0513BF50A71D730CEFFFF5FC5C56A37D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F3149C71E426719A7FB7DFC1C91BF03 /* LithoOperators.modulemap */,
+				0F36820DBB73C0205D3F4A4B09D1A045 /* LithoOperators-dummy.m */,
+				E2C7BD7A3B86B0E48AA00C7704150739 /* LithoOperators-Info.plist */,
+				4BA173C46F7FDB5531B986CB0163B4B1 /* LithoOperators-prefix.pch */,
+				64F8CAA620B79DF3DAFB4DFCB16A3CA6 /* LithoOperators-umbrella.h */,
+				F6A512EF3B6F5F0B5BDD3391007F589F /* LithoOperators.debug.xcconfig */,
+				06AECA3BA394EF855EA676D4CEE97819 /* LithoOperators.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LithoOperators";
+			sourceTree = "<group>";
+		};
+		07286972C1F7ECD0F606954BCDCDC0AA /* Pods-LithoOnboarding_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6F4C1AA6E6B678063C6C3BFCFEE860C6 /* Pods-LithoOnboarding_Tests.modulemap */,
+				443900383093B46D45F2177A6732017C /* Pods-LithoOnboarding_Tests-acknowledgements.markdown */,
+				CA0E227F53295A1E0012BFEA4F764B7A /* Pods-LithoOnboarding_Tests-acknowledgements.plist */,
+				06001691B4BDF1005D8438260913237A /* Pods-LithoOnboarding_Tests-dummy.m */,
+				F364B207A3FFAF55F1C1AF9F0ABCC324 /* Pods-LithoOnboarding_Tests-frameworks.sh */,
+				FC33B2C4649119E8597611FD1B072A53 /* Pods-LithoOnboarding_Tests-Info.plist */,
+				8127938309F52BEA30377D56ABAB3B02 /* Pods-LithoOnboarding_Tests-umbrella.h */,
+				41BA50E86CB9F1205DC6EC3ABB57EB28 /* Pods-LithoOnboarding_Tests.debug.xcconfig */,
+				8BA29D23DE21D83247DD5B63F0EB9A3C /* Pods-LithoOnboarding_Tests.release.xcconfig */,
+			);
+			name = "Pods-LithoOnboarding_Tests";
+			path = "Target Support Files/Pods-LithoOnboarding_Tests";
+			sourceTree = "<group>";
+		};
+		12C66F6353D633ED4F8095193EFEFCE5 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				FE4D43532A2CA20E575DE9B9745246BA /* Core */,
+				C28AB4232772F14E1A029D00CED0B661 /* Support Files */,
+				49817AE5C99CAA6529997A985DC9AFA9 /* SwiftSupport */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		17470A1A6F58AA3D63514A1BE1A71E1F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9BBB1BE7E667CF57E3237D04A6FAE9B /* Prelude.modulemap */,
+				33E24832DB385CD19B9D0A16FDB82D21 /* Prelude-dummy.m */,
+				D3661DBC67BD03D4A66B217B66545D6D /* Prelude-Info.plist */,
+				E9E8D3F9280F8861EF8933A6DA3A4E99 /* Prelude-prefix.pch */,
+				E29BE101036DF796578448A869D5836F /* Prelude-umbrella.h */,
+				982CC9E94CFD91E47EEB21BF690D40E8 /* Prelude.debug.xcconfig */,
+				D7777DF6E9563E8483D28F78804F167D /* Prelude.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Prelude";
+			sourceTree = "<group>";
+		};
+		2B694984B722EB9A13CB3A0A7BBF6045 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBF95A75A172802A47FB078965E5B2C0 /* LithoOnboarding.modulemap */,
+				59DC7D1EFD6074B89A3507CB070AB3FE /* LithoOnboarding-dummy.m */,
+				AF37E4FE44B5005565D1D6F4BB8686D8 /* LithoOnboarding-Info.plist */,
+				C60BF8F50AB9B6C1889024A8E91C7E62 /* LithoOnboarding-prefix.pch */,
+				D569869EE0FEAA4805A28EE3863755B1 /* LithoOnboarding-umbrella.h */,
+				194DBEDD74C67CC3286692CD06FA128C /* LithoOnboarding.debug.xcconfig */,
+				0356FA02DBBBDCEF08D71A2687A79687 /* LithoOnboarding.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LithoOnboarding";
+			sourceTree = "<group>";
+		};
+		2F127006B894EFFD9C6B2380854C91A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				587204AE07B25F8D83296F33CEC4FE2E /* LithoUtils.modulemap */,
+				E276D153978A1A618D6095E02E8080EB /* LithoUtils-dummy.m */,
+				437A5EBF334352CABAE49ED9024A6D0E /* LithoUtils-Info.plist */,
+				4CB81143E6A93B90714C0999C0B81820 /* LithoUtils-prefix.pch */,
+				89959D6393553DB12C9DBEE27893DE36 /* LithoUtils-umbrella.h */,
+				6A040B34B45889DAE7FDD9E889DAD1F4 /* LithoUtils.debug.xcconfig */,
+				819A557AF41E7A892EC44E35AF391119 /* LithoUtils.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LithoUtils";
+			sourceTree = "<group>";
+		};
+		3C63216971FC8378819854E4E66C0E34 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3CB97E21D06AC456A6E5F0447BADDAEE /* FUICollectionViewViewController.xib */,
+				CBB95C59676A53295B2855EE97E32713 /* FUITableViewViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		49817AE5C99CAA6529997A985DC9AFA9 /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				ECC980FF23ED28C0B83E8498C2535640 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		60E70EBE17E3BEBD6DEE43C25A5457AD /* LithoUtils */ = {
+			isa = PBXGroup;
+			children = (
+				6F2AEDCA0A62B404897B7E87F34147CC /* Alert.swift */,
+				3C4ED59FBC20598DFAAD2AB868726303 /* BindViewModel.swift */,
+				6E95EF9AA1FA69746277AA810382E27D /* CanIndicateActivity.swift */,
+				A8621268E75D8F9BDEC2535610FA5D02 /* Configurable.swift */,
+				A9CA5E7EAB3865A05B70B91019DA5DF7 /* iOSFunctions.swift */,
+				4C537EAD031772FABE5139AEF2BC93BD /* Styles.swift */,
+				2BE721CF9F281F97F3A886ABBF720268 /* UIColor+hex.swift */,
+				BA33EB07828EAD81974B2523489FA1AB /* UIImage+Resize.swift */,
+				F9D990C067A523DCD497F254745B20AA /* UIViewController+BarButtonItem.swift */,
+				E1CB4580AA8EF52DE49293BAE42BE657 /* UIViewController+DismissKeyboard.swift */,
+				318968F659530E7EBA07A880D9A5847F /* UIWindow+Present.swift */,
+				9E63B2D28D071288FDD05272B07D4AB8 /* Core */,
+				2F127006B894EFFD9C6B2380854C91A8 /* Support Files */,
+			);
+			path = LithoUtils;
+			sourceTree = "<group>";
+		};
+		6AAF89653D44A1878213C3B306C20ACE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				10016F2944B285AA1318EEA9E96C83BC /* fuikit.modulemap */,
+				A2B4733DB91457C0BD01145707E9D42B /* fuikit-dummy.m */,
+				D5F789D2E01ABB2C6F6D0279EF3C0CE1 /* fuikit-Info.plist */,
+				E09F2186E4A4B6DA977CC6FE387C2A03 /* fuikit-prefix.pch */,
+				A1771592E03A4F8AAA36ADE91DD13B08 /* fuikit-umbrella.h */,
+				6A4CE63D424C08BCF495DBF8257378AF /* fuikit.debug.xcconfig */,
+				613474421597CD1115AA83EFE96B44CC /* fuikit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/fuikit";
+			sourceTree = "<group>";
+		};
+		6DD14E5E6829A155F53AD02AAD2DC214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
+				1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */,
+				11E939E3E3320399CC4A44739A91B2BA /* LithoOnboarding.framework */,
+				F02BB82B3FFD1B4A5BE1C7443584444C /* LithoOperators.framework */,
+				D115576C85F820B62F6C146A2903CA50 /* LithoUtils.framework */,
+				34E8F7C5E2314B46329B2D2AC2FC6EA3 /* Pods_LithoOnboarding_Example.framework */,
+				EF8D8F3F17A40B97B3E1E2BA4933530F /* Pods_LithoOnboarding_Tests.framework */,
+				0FC679A41D0D34FD873B7D9F9E6BE8BB /* Prelude.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DF2D85119A55DCA0B773F156DDB9C28 /* LithoOperators */ = {
+			isa = PBXGroup;
+			children = (
+				62EC048F3F0E4700339EB619CD14504E /* LithoOperators.swift */,
+				0513BF50A71D730CEFFFF5FC5C56A37D /* Support Files */,
+			);
+			path = LithoOperators;
+			sourceTree = "<group>";
+		};
+		7303B62400F82F50B7AD77C281340FAC /* Prelude */ = {
+			isa = PBXGroup;
+			children = (
+				983F4A175F2D7ED6910C228996892EE9 /* Application.swift */,
+				229A834B52F972D63AF1B606D9DD95D4 /* Compose.swift */,
+				1803E008658324BC6A219BB4AB494244 /* Curry.swift */,
+				BDB40BA957E20116F155EFC82D330447 /* Fix.swift */,
+				4483FCB878F9228AFCCDFD682A550C5E /* Flip.swift */,
+				4EC9C12828BBCC62E5CBB7FE87AA976D /* Optional.swift */,
+				97C82E5BCADEA88E8C70FFF7B67FD9E3 /* Prelude.swift */,
+				EA54668C4F208EECC234A2ECE038097F /* Tuple.swift */,
+				17470A1A6F58AA3D63514A1BE1A71E1F /* Support Files */,
+			);
+			path = Prelude;
+			sourceTree = "<group>";
+		};
+		7AC80978D84263DFE29027C556223DE9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				11DBD925A2FE7354796E596495863275 /* Foundation.framework */,
+				52D51D8727A2DAADEABA3B6B5CBB4C2F /* QuartzCore.framework */,
+				9C92940559530F2D11F73ABADC5D8990 /* UIKit.framework */,
+				4FEF29CAE8342D6A70C91D578FA309E7 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8591A662B70E9983D7208AE120C12811 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEDC3743ED41F6E47A56158A18CF7B7E /* LithoOnboarding */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8AE98D03E44ACFEB4F0F11BD43F9D427 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				607276FD68158E9D7C2C1138218D322D /* LICENSE */,
+				07A8E74945E37F6B9922579B1601C8C5 /* LithoOnboarding.podspec */,
+				F8A61F4DC6FA21A42239A636BA70584D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9E63B2D28D071288FDD05272B07D4AB8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AEDC3743ED41F6E47A56158A18CF7B7E /* LithoOnboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5EA0EB33F82CC8CED4A096311BA190B1 /* BaseOnboardingView.swift */,
+				69C5F5086BC60416A31E886EE6669522 /* BaseOnboardingView.xib */,
+				03257136580122EE0423A57946B36548 /* OnboardingViewController.swift */,
+				3AE255E4200AF21D1BD1AA1943562B1D /* Styles.swift */,
+				8AE98D03E44ACFEB4F0F11BD43F9D427 /* Pod */,
+				2B694984B722EB9A13CB3A0A7BBF6045 /* Support Files */,
+			);
+			name = LithoOnboarding;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C28AB4232772F14E1A029D00CED0B661 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA225D5BCA44345A75EA4C73C6AD6CC0 /* FBSnapshotTestCase.modulemap */,
+				B22A66B4DE0971C065A4BDFEDB0FDE2F /* FBSnapshotTestCase-dummy.m */,
+				52829A5145D6DDB5D8DD6AFF9AF57EC9 /* FBSnapshotTestCase-Info.plist */,
+				47CD8E9D21A2F848EEB79C5AF8480E8B /* FBSnapshotTestCase-prefix.pch */,
+				3ECC72492AFFD6C017C37637AD71B111 /* FBSnapshotTestCase-umbrella.h */,
+				0FA79DABE243BDFB39A7AF8A57994268 /* FBSnapshotTestCase.debug.xcconfig */,
+				D28752D3052E7FA0702C3AAE32E64AA7 /* FBSnapshotTestCase.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8591A662B70E9983D7208AE120C12811 /* Development Pods */,
+				0502F9140C6E60B86FE0C91BD7BE4844 /* Frameworks */,
+				FD9A9CC681EA56DA1511EFEBF43D8C07 /* Pods */,
+				6DD14E5E6829A155F53AD02AAD2DC214 /* Products */,
+				EFF935625D254FDF15948EBEE952D9B3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D86686F27AE998B0FB9AD882D1EC7254 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				81CBC81698533B4BB2055DB46AC6A5CE /* FUICollectionViewDelegate.swift */,
+				1CD30F282152CF7E00A01D31ACB1873E /* FUICollectionViewViewController.swift */,
+				0BB4E272F8CF0DC57302A61DB2D8D9DC /* FUIImagePickerDelegate.swift */,
+				79F0A6D0DC6063225F7B1EC0FB7B6893 /* FUISearchBarDelegate.swift */,
+				91E3D94BD5F79EBE31456CBB485D0E24 /* FUITableViewDataSource.swift */,
+				83DC6E490404AF5983DB2EAC3B0E6231 /* FUITableViewDelegate.swift */,
+				74CDC12695B7D5A5650E37348794D7AB /* FUITableViewViewController.swift */,
+				6F7FBBA752D410B8CB18E53C94EDE28E /* FUITextFieldDelegate.swift */,
+				93CD87AD7E6CA5BA09E88AB528EFED85 /* FUITextViewDelegate.swift */,
+				E5D894527CE4470D0A88586E15382655 /* FUIViewController.swift */,
+				F81292CD189C200E2A6C578F75D1CB20 /* UIViewController+PushPop.swift */,
+				3C63216971FC8378819854E4E66C0E34 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E7B8CF9323BBB28238DDC98BE7DDBF4F /* Pods-LithoOnboarding_Example */ = {
+			isa = PBXGroup;
+			children = (
+				246DCA0FF1489FD84ECDCA86363D804F /* Pods-LithoOnboarding_Example.modulemap */,
+				89B98EEB9C5F8AE8D8D077F5EE16D989 /* Pods-LithoOnboarding_Example-acknowledgements.markdown */,
+				D29F0E52B068C07C429B20819C29DBC1 /* Pods-LithoOnboarding_Example-acknowledgements.plist */,
+				C45B56F0760FA37A5D5788A2FE4B3128 /* Pods-LithoOnboarding_Example-dummy.m */,
+				2ABE86AFDFAF2228B2659C66BC1A5226 /* Pods-LithoOnboarding_Example-frameworks.sh */,
+				DB6386F262F8ED7CEC83C85395EE72C3 /* Pods-LithoOnboarding_Example-Info.plist */,
+				90EF2BED513A3C51206424C555024913 /* Pods-LithoOnboarding_Example-umbrella.h */,
+				3999AFAB61160EAB70ECC19EE1148CB9 /* Pods-LithoOnboarding_Example.debug.xcconfig */,
+				E09931E60687F75E11FE88597CAC2E5B /* Pods-LithoOnboarding_Example.release.xcconfig */,
+			);
+			name = "Pods-LithoOnboarding_Example";
+			path = "Target Support Files/Pods-LithoOnboarding_Example";
+			sourceTree = "<group>";
+		};
+		E8F21B7F743454281D353A99D3B042EA /* fuikit */ = {
+			isa = PBXGroup;
+			children = (
+				D86686F27AE998B0FB9AD882D1EC7254 /* Core */,
+				6AAF89653D44A1878213C3B306C20ACE /* Support Files */,
+			);
+			path = fuikit;
+			sourceTree = "<group>";
+		};
+		EFF935625D254FDF15948EBEE952D9B3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7B8CF9323BBB28238DDC98BE7DDBF4F /* Pods-LithoOnboarding_Example */,
+				07286972C1F7ECD0F606954BCDCDC0AA /* Pods-LithoOnboarding_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FD9A9CC681EA56DA1511EFEBF43D8C07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12C66F6353D633ED4F8095193EFEFCE5 /* FBSnapshotTestCase */,
+				E8F21B7F743454281D353A99D3B042EA /* fuikit */,
+				6DF2D85119A55DCA0B773F156DDB9C28 /* LithoOperators */,
+				60E70EBE17E3BEBD6DEE43C25A5457AD /* LithoUtils */,
+				7303B62400F82F50B7AD77C281340FAC /* Prelude */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE4D43532A2CA20E575DE9B9745246BA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2B6C99D3ED3787755BB23BDB7DC7B13E /* FBSnapshotTestCase.h */,
+				7704D6A4A7867F19A77E9AE2D1FE0AF1 /* FBSnapshotTestCase.m */,
+				B9052FA856396794AD3AE22E66FEDFBD /* FBSnapshotTestCasePlatform.h */,
+				37006FCEDEF61F0D4F260DC08EBFCBFA /* FBSnapshotTestCasePlatform.m */,
+				D315A817DE018E6B55CD079C25597B8A /* FBSnapshotTestController.h */,
+				641257B7BDDCD4BA8DDF6A36291A1148 /* FBSnapshotTestController.m */,
+				6D2CD6C0DFD3826B2A8A9A4C2F9E06AF /* UIApplication+StrictKeyWindow.h */,
+				8548F6A77B72F26AFB35F72C7BAAC8B2 /* UIApplication+StrictKeyWindow.m */,
+				E734F1C09C82D743FB4B59A655ABAD13 /* UIImage+Compare.h */,
+				B8AB277ADEA78ED6736EE10A675D46AD /* UIImage+Compare.m */,
+				15DBA9638EEDCC9067B1346187751C39 /* UIImage+Diff.h */,
+				BD3EF9A4C394DC0A5433B649DEAC2060 /* UIImage+Diff.m */,
+				A744878A0A872978C16D30DDF706DF9F /* UIImage+Snapshot.h */,
+				FB7DB959C44D8FD4CF2C29B1484726D7 /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		384DE8A8021C5DA5E256BCFEC3D478A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */,
+				C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */,
+				90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */,
+				40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */,
+				F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */,
+				D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */,
+				B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443E4EB73726B93EF5EB4DEBDC571880 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E79F19B6492E9677259435F6093D242 /* Pods-LithoOnboarding_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DF0545EB3F7EF0EB92CE43C3AEAC71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1055EE1DD389DAB3972B84593511E2 /* LithoUtils-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5729EBB189DC5DD4D0C7DAE815509949 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8D559676060EF800C4FE3D9025D45B /* Pods-LithoOnboarding_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7913B677C365822C4B14524D2F31AFDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0820FA7899D83437B4DBE52077AF4CB /* LithoOnboarding-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A30FB13126AE2CA189834D2B29270A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D7F6841DD4F55A12C85CF1A45D5197 /* fuikit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D838F4B9900F2B7B939E5104138ED0A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460A25864D9F6D0FD5863A8EAB03FFB8 /* Prelude-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20C050B3A9DF027A0C011CA53B885AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E790D92D6AE15ACB05BEF47525E68FF3 /* LithoOperators-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6C1AB688A5C9DE02C75AC815D03E671F /* LithoUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F94E9707A2FAD24961E933B6EBC4A767 /* Build configuration list for PBXNativeTarget "LithoUtils" */;
+			buildPhases = (
+				53DF0545EB3F7EF0EB92CE43C3AEAC71 /* Headers */,
+				B36577755475791424EAEB2A93025280 /* Sources */,
+				56CC66B016BCF236C8075EBBCCE571CE /* Frameworks */,
+				314D894105C0434C2FCEDF7ECE7BC46B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17959A4C3F11C35AA52391BBD87C34CC /* PBXTargetDependency */,
+				BC22BE780D2975F8F0977B6F73BD71EB /* PBXTargetDependency */,
+			);
+			name = LithoUtils;
+			productName = LithoUtils;
+			productReference = D115576C85F820B62F6C146A2903CA50 /* LithoUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		745C9E47521BEDE21EDB231541C74843 /* Pods-LithoOnboarding_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D326F8897243B5E54E2C0278797E698 /* Build configuration list for PBXNativeTarget "Pods-LithoOnboarding_Tests" */;
+			buildPhases = (
+				443E4EB73726B93EF5EB4DEBDC571880 /* Headers */,
+				C3CC4618A41F5C94AF03089BC4D2AB93 /* Sources */,
+				A523B539555B08DBDA79819EB5C89C9D /* Frameworks */,
+				EDA574C84D87458C9994E70CF6DA8513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9893131167806A91AEC912DBD04D518E /* PBXTargetDependency */,
+				1BF484F682591206E0FB560AA84D6BEF /* PBXTargetDependency */,
+			);
+			name = "Pods-LithoOnboarding_Tests";
+			productName = "Pods-LithoOnboarding_Tests";
+			productReference = EF8D8F3F17A40B97B3E1E2BA4933530F /* Pods_LithoOnboarding_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77FDE97C0A27358B35623EE793130529 /* LithoOnboarding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56355B85326FA43CE9F32EDC261CD3B4 /* Build configuration list for PBXNativeTarget "LithoOnboarding" */;
+			buildPhases = (
+				7913B677C365822C4B14524D2F31AFDB /* Headers */,
+				45A7C6670CA6586BBE43B74184316C9B /* Sources */,
+				255740569BBE3B12222A8B5643EDBCF4 /* Frameworks */,
+				528D140442327B5B502855E1AB70863B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A874A7B5D341F967385001147A8F467 /* PBXTargetDependency */,
+				A5F1063F5EE0E22CBDE8EB4F94678891 /* PBXTargetDependency */,
+				EB314149BDFA8627DAA013B845EDA88A /* PBXTargetDependency */,
+			);
+			name = LithoOnboarding;
+			productName = LithoOnboarding;
+			productReference = 11E939E3E3320399CC4A44739A91B2BA /* LithoOnboarding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80195736004BAB319C2BF172275F664D /* Pods-LithoOnboarding_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 947FB3ADB2A0A874424F2FD921521449 /* Build configuration list for PBXNativeTarget "Pods-LithoOnboarding_Example" */;
+			buildPhases = (
+				5729EBB189DC5DD4D0C7DAE815509949 /* Headers */,
+				941B5C3ADA2754076EA5A86764BA3ADB /* Sources */,
+				E6A5A8799B4C4B5A209AF7A8B4502D90 /* Frameworks */,
+				10BFFAEDA2ABA366F5D8CF5F3554130A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				768F83C2150846AEAB36599EA3ADBEA5 /* PBXTargetDependency */,
+				2A16FA9517B8A266829802E70E25488A /* PBXTargetDependency */,
+				FF14D919A0396B7BF1644C6EE12C63E4 /* PBXTargetDependency */,
+				869CD7893EF0987A44DB1C95D301546D /* PBXTargetDependency */,
+				C7A77BBC3FB57BBCE4ABC2FC62899884 /* PBXTargetDependency */,
+			);
+			name = "Pods-LithoOnboarding_Example";
+			productName = "Pods-LithoOnboarding_Example";
+			productReference = 34E8F7C5E2314B46329B2D2AC2FC6EA3 /* Pods_LithoOnboarding_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				384DE8A8021C5DA5E256BCFEC3D478A9 /* Headers */,
+				A48201AC594B2E6B09C0EE0396BC1377 /* Sources */,
+				E581515110D66F94F80A6937831489A1 /* Frameworks */,
+				5CC655F1A6C7A45A9693160581076BAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BDE9651E3D91FEDF74EB17C3CBDD3742 /* Prelude */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 241815B1AA2B4DBA57364EE78E73E609 /* Build configuration list for PBXNativeTarget "Prelude" */;
+			buildPhases = (
+				D838F4B9900F2B7B939E5104138ED0A1 /* Headers */,
+				521C2B278AF6B6751A703651715C3D88 /* Sources */,
+				A606A9065B4987E0A56EF53B1504FADA /* Frameworks */,
+				5D391629E5F385E46D641CDC4F49E783 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prelude;
+			productName = Prelude;
+			productReference = 0FC679A41D0D34FD873B7D9F9E6BE8BB /* Prelude.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C04700E22229A736E5C110BBF44E6112 /* fuikit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C8D346680E3BF8E947BC68370960EB2 /* Build configuration list for PBXNativeTarget "fuikit" */;
+			buildPhases = (
+				86A30FB13126AE2CA189834D2B29270A /* Headers */,
+				7564BB31255CF578E8312DBE11684D09 /* Sources */,
+				4ACD9E6D921DDF77489340E4CCF7EB3C /* Frameworks */,
+				CF0FF4BFF44A098F29971394F57AC620 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fuikit;
+			productName = fuikit;
+			productReference = 1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F23B1651D4D0DDA611CCBAFB8BFEED54 /* LithoOperators */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5952B26FB246B67D9192931712BD3D5 /* Build configuration list for PBXNativeTarget "LithoOperators" */;
+			buildPhases = (
+				F20C050B3A9DF027A0C011CA53B885AF /* Headers */,
+				894A1B0B4B8C3AC0D6B6C0E4D474C64C /* Sources */,
+				422252BDA450BEB329B5F5CEFA71F250 /* Frameworks */,
+				507A6697D4CCA94E553C050A6D8BAF0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2922DA8DD1884AC314833A314E7FBF63 /* PBXTargetDependency */,
+			);
+			name = LithoOperators;
+			productName = LithoOperators;
+			productReference = F02BB82B3FFD1B4A5BE1C7443584444C /* LithoOperators.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6DD14E5E6829A155F53AD02AAD2DC214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */,
+				C04700E22229A736E5C110BBF44E6112 /* fuikit */,
+				77FDE97C0A27358B35623EE793130529 /* LithoOnboarding */,
+				F23B1651D4D0DDA611CCBAFB8BFEED54 /* LithoOperators */,
+				6C1AB688A5C9DE02C75AC815D03E671F /* LithoUtils */,
+				80195736004BAB319C2BF172275F664D /* Pods-LithoOnboarding_Example */,
+				745C9E47521BEDE21EDB231541C74843 /* Pods-LithoOnboarding_Tests */,
+				BDE9651E3D91FEDF74EB17C3CBDD3742 /* Prelude */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10BFFAEDA2ABA366F5D8CF5F3554130A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314D894105C0434C2FCEDF7ECE7BC46B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507A6697D4CCA94E553C050A6D8BAF0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528D140442327B5B502855E1AB70863B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC655F1A6C7A45A9693160581076BAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D391629E5F385E46D641CDC4F49E783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF0FF4BFF44A098F29971394F57AC620 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB22074F366D974C471FF03452F650B8 /* FUICollectionViewViewController.xib in Resources */,
+				DA734ADBA8BEAE0C804009059D6BB53F /* FUITableViewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA574C84D87458C9994E70CF6DA8513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45A7C6670CA6586BBE43B74184316C9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFF0AD0F5C1361D2764D7F9B3F74ACE /* BaseOnboardingView.swift in Sources */,
+				2305384F9905CEC95D2D8F137FEF82C1 /* BaseOnboardingView.xib in Sources */,
+				09802EF4EC0B7A3F82E74CD51C3692BD /* LithoOnboarding-dummy.m in Sources */,
+				E70BAE5807E0762B5641F6B30A3A412D /* OnboardingViewController.swift in Sources */,
+				E45B47E79573E68FD36330621A5BCF3B /* Styles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521C2B278AF6B6751A703651715C3D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E342798EBE668DFB673E1F782E0004D3 /* Application.swift in Sources */,
+				2176D6FFEE86FB4506ACA7C83EBB7EB4 /* Compose.swift in Sources */,
+				66CC6E3C4F7D95A4941AA88C0561EC40 /* Curry.swift in Sources */,
+				CB44D15008104D11DC7680530D660A88 /* Fix.swift in Sources */,
+				B263558200218DC5CD917C03A390A300 /* Flip.swift in Sources */,
+				CB3BC79467E65FF2084DF39CB3EF0494 /* Optional.swift in Sources */,
+				8AB81F6C7C872D1F2C550B90005035D4 /* Prelude-dummy.m in Sources */,
+				5DBF5326A4A41B7784F1598F508BE967 /* Prelude.swift in Sources */,
+				FFF0AF6D093BD9ADD4BC7E50F8C1816A /* Tuple.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7564BB31255CF578E8312DBE11684D09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB2BCD3F4638515DE3CFDEF4D0FC710 /* FUICollectionViewDelegate.swift in Sources */,
+				A28CB880DA80D91681DEA6FF8815F14C /* FUICollectionViewViewController.swift in Sources */,
+				5977569D55E02D656CC0FD68939C1FC2 /* FUIImagePickerDelegate.swift in Sources */,
+				DD908A95BFA93766C5AA894B35CD74A9 /* fuikit-dummy.m in Sources */,
+				C09B186E71C1B2B069C5DB039E8900FA /* FUISearchBarDelegate.swift in Sources */,
+				8F880402D55013DBA8EFF07C3F38CAD6 /* FUITableViewDataSource.swift in Sources */,
+				5555E55DB7377AC1B04F657638AF04B0 /* FUITableViewDelegate.swift in Sources */,
+				B871F47A15EC6CF5B9584E55BDE09EA7 /* FUITableViewViewController.swift in Sources */,
+				F2A1580B5EFAC54EE44119ECDE27C125 /* FUITextFieldDelegate.swift in Sources */,
+				37530140CE29CB27DE842F9E6B020462 /* FUITextViewDelegate.swift in Sources */,
+				A1F539CE75BF16119DF3D29043FF058A /* FUIViewController.swift in Sources */,
+				30B3B0C08FD5EDBCBEDFA33A495DE8F0 /* UIViewController+PushPop.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894A1B0B4B8C3AC0D6B6C0E4D474C64C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668F6F7F53794507D58FFC19E6EBADAB /* LithoOperators-dummy.m in Sources */,
+				6BD60D312A02EE12032C70F5F40DBD95 /* LithoOperators.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		941B5C3ADA2754076EA5A86764BA3ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D1B4665472421804C1FA3A261AB9EE /* Pods-LithoOnboarding_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48201AC594B2E6B09C0EE0396BC1377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */,
+				8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */,
+				E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */,
+				88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */,
+				9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */,
+				11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */,
+				2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */,
+				14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */,
+				A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36577755475791424EAEB2A93025280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346D6BF76D585B94004C3EA98D6BE68C /* Alert.swift in Sources */,
+				AB97E95D2F96A3A5D644E9100C20362E /* BindViewModel.swift in Sources */,
+				903E3B3F9CAB8DFAD1FD8054B259F4F8 /* CanIndicateActivity.swift in Sources */,
+				02C0C2ED1FB4F9C15BA002AA6C05033C /* Configurable.swift in Sources */,
+				32C8E0FD4245DCF3D9039CA79A7A5439 /* iOSFunctions.swift in Sources */,
+				D7E160D84B112E678C37E6641269380F /* LithoUtils-dummy.m in Sources */,
+				7D17146B0D3D948B01626FBE5A571711 /* Styles.swift in Sources */,
+				5B38B754C0234F7836CA6BA48A16D6BD /* UIColor+hex.swift in Sources */,
+				08C6BCFFFD9CA70E5E5EAE8CCFBD845E /* UIImage+Resize.swift in Sources */,
+				8E0231B7DE0821BC06156AC3EBCC6493 /* UIViewController+BarButtonItem.swift in Sources */,
+				1106F540435158BB96C47CDAFD105BF5 /* UIViewController+DismissKeyboard.swift in Sources */,
+				FFFA921AE6E789ED484F47B293DEB574 /* UIWindow+Present.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CC4618A41F5C94AF03089BC4D2AB93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF430038A58FABC88A3A75D9EEE556E /* Pods-LithoOnboarding_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17959A4C3F11C35AA52391BBD87C34CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LithoOperators;
+			target = F23B1651D4D0DDA611CCBAFB8BFEED54 /* LithoOperators */;
+			targetProxy = 8B7EE311A77B3823CF1407F869B2F897 /* PBXContainerItemProxy */;
+		};
+		1BF484F682591206E0FB560AA84D6BEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LithoOnboarding_Example";
+			target = 80195736004BAB319C2BF172275F664D /* Pods-LithoOnboarding_Example */;
+			targetProxy = 66D736E8E5CA16F87F6FACCC168C9942 /* PBXContainerItemProxy */;
+		};
+		2922DA8DD1884AC314833A314E7FBF63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Prelude;
+			target = BDE9651E3D91FEDF74EB17C3CBDD3742 /* Prelude */;
+			targetProxy = 73476C074135C9155AF89309DFA233B6 /* PBXContainerItemProxy */;
+		};
+		2A16FA9517B8A266829802E70E25488A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LithoOperators;
+			target = F23B1651D4D0DDA611CCBAFB8BFEED54 /* LithoOperators */;
+			targetProxy = D31490F8DED2BDB00C3E6A50904293DC /* PBXContainerItemProxy */;
+		};
+		2A874A7B5D341F967385001147A8F467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LithoOperators;
+			target = F23B1651D4D0DDA611CCBAFB8BFEED54 /* LithoOperators */;
+			targetProxy = ED5117C4269A1BE93B34E79486CF7062 /* PBXContainerItemProxy */;
+		};
+		768F83C2150846AEAB36599EA3ADBEA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LithoOnboarding;
+			target = 77FDE97C0A27358B35623EE793130529 /* LithoOnboarding */;
+			targetProxy = 0E4533B3CCAC1D2FE54450A932F0E75B /* PBXContainerItemProxy */;
+		};
+		869CD7893EF0987A44DB1C95D301546D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Prelude;
+			target = BDE9651E3D91FEDF74EB17C3CBDD3742 /* Prelude */;
+			targetProxy = 769AB34C1B51F588B8BA12AC1B8152F7 /* PBXContainerItemProxy */;
+		};
+		9893131167806A91AEC912DBD04D518E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 349AEC2CA8BEEBA142239BE40094AAC0 /* PBXContainerItemProxy */;
+		};
+		A5F1063F5EE0E22CBDE8EB4F94678891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LithoUtils;
+			target = 6C1AB688A5C9DE02C75AC815D03E671F /* LithoUtils */;
+			targetProxy = 5284C419BA1B45254B440C8F1C6120DD /* PBXContainerItemProxy */;
+		};
+		BC22BE780D2975F8F0977B6F73BD71EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fuikit;
+			target = C04700E22229A736E5C110BBF44E6112 /* fuikit */;
+			targetProxy = 4C040A32CE1C0A5F8FD50BC576E7D041 /* PBXContainerItemProxy */;
+		};
+		C7A77BBC3FB57BBCE4ABC2FC62899884 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fuikit;
+			target = C04700E22229A736E5C110BBF44E6112 /* fuikit */;
+			targetProxy = 6EF8A6E57D8B3E2E9CB22DCC0C00B80F /* PBXContainerItemProxy */;
+		};
+		EB314149BDFA8627DAA013B845EDA88A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fuikit;
+			target = C04700E22229A736E5C110BBF44E6112 /* fuikit */;
+			targetProxy = C36247037BEB7DD5D6416F977FC0A382 /* PBXContainerItemProxy */;
+		};
+		FF14D919A0396B7BF1644C6EE12C63E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LithoUtils;
+			target = 6C1AB688A5C9DE02C75AC815D03E671F /* LithoUtils */;
+			targetProxy = A9800F97C6AE0AFFB4D62061DFBCE9FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08E9D22F883AB1CBB5DE83C70B5FE0C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 613474421597CD1115AA83EFE96B44CC /* fuikit.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fuikit/fuikit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fuikit/fuikit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fuikit/fuikit.modulemap";
+				PRODUCT_MODULE_NAME = fuikit;
+				PRODUCT_NAME = fuikit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25E38A3FF72CEC846A40D53BCE6CD8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 194DBEDD74C67CC3286692CD06FA128C /* LithoOnboarding.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LithoOnboarding/LithoOnboarding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LithoOnboarding/LithoOnboarding-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LithoOnboarding/LithoOnboarding.modulemap";
+				PRODUCT_MODULE_NAME = LithoOnboarding;
+				PRODUCT_NAME = LithoOnboarding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2ED3770465A4EBF0D93E33F276FF3BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982CC9E94CFD91E47EEB21BF690D40E8 /* Prelude.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Prelude/Prelude-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Prelude/Prelude-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Prelude/Prelude.modulemap";
+				PRODUCT_MODULE_NAME = Prelude;
+				PRODUCT_NAME = Prelude;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33CDE96CEDEEC69F489EAEE6CCD6FC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 819A557AF41E7A892EC44E35AF391119 /* LithoUtils.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LithoUtils/LithoUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LithoUtils/LithoUtils-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LithoUtils/LithoUtils.modulemap";
+				PRODUCT_MODULE_NAME = LithoUtils;
+				PRODUCT_NAME = LithoUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4F2EDC446D596382C603BC0D5C00788C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA79DABE243BDFB39A7AF8A57994268 /* FBSnapshotTestCase.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5471881F1600877A30EACB65F2F012E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09931E60687F75E11FE88597CAC2E5B /* Pods-LithoOnboarding_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LithoOnboarding_Example/Pods-LithoOnboarding_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LithoOnboarding_Example/Pods-LithoOnboarding_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		568968D2FAAE9DEBD16393E6873C10A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A040B34B45889DAE7FDD9E889DAD1F4 /* LithoUtils.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LithoUtils/LithoUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LithoUtils/LithoUtils-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LithoUtils/LithoUtils.modulemap";
+				PRODUCT_MODULE_NAME = LithoUtils;
+				PRODUCT_NAME = LithoUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60E9DEB8B5370BB2824646B5E1C83D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA29D23DE21D83247DD5B63F0EB9A3C /* Pods-LithoOnboarding_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LithoOnboarding_Tests/Pods-LithoOnboarding_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LithoOnboarding_Tests/Pods-LithoOnboarding_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		659632C20002DE8AC851ACD6048DA5B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A512EF3B6F5F0B5BDD3391007F589F /* LithoOperators.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LithoOperators/LithoOperators-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LithoOperators/LithoOperators-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LithoOperators/LithoOperators.modulemap";
+				PRODUCT_MODULE_NAME = LithoOperators;
+				PRODUCT_NAME = LithoOperators;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		72AADDCC020F498E1DD3B05BA4F185E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06AECA3BA394EF855EA676D4CEE97819 /* LithoOperators.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LithoOperators/LithoOperators-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LithoOperators/LithoOperators-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LithoOperators/LithoOperators.modulemap";
+				PRODUCT_MODULE_NAME = LithoOperators;
+				PRODUCT_NAME = LithoOperators;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		759919A8BBA847885880CFE398F54573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A4CE63D424C08BCF495DBF8257378AF /* fuikit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fuikit/fuikit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fuikit/fuikit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fuikit/fuikit.modulemap";
+				PRODUCT_MODULE_NAME = fuikit;
+				PRODUCT_NAME = fuikit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C5BFE65A0C16B775BB5A55588D1E3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7777DF6E9563E8483D28F78804F167D /* Prelude.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Prelude/Prelude-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Prelude/Prelude-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Prelude/Prelude.modulemap";
+				PRODUCT_MODULE_NAME = Prelude;
+				PRODUCT_NAME = Prelude;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B0B97D3097F6FAA066C83D26ECEBC517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3999AFAB61160EAB70ECC19EE1148CB9 /* Pods-LithoOnboarding_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LithoOnboarding_Example/Pods-LithoOnboarding_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LithoOnboarding_Example/Pods-LithoOnboarding_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B194CE00217E79BFD056930258118570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0356FA02DBBBDCEF08D71A2687A79687 /* LithoOnboarding.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LithoOnboarding/LithoOnboarding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LithoOnboarding/LithoOnboarding-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LithoOnboarding/LithoOnboarding.modulemap";
+				PRODUCT_MODULE_NAME = LithoOnboarding;
+				PRODUCT_NAME = LithoOnboarding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4205A4ADADF2F5456CB5CC65218B09E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28752D3052E7FA0702C3AAE32E64AA7 /* FBSnapshotTestCase.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4C989F09B6634D0B22791B1101CEC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41BA50E86CB9F1205DC6EC3ABB57EB28 /* Pods-LithoOnboarding_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LithoOnboarding_Tests/Pods-LithoOnboarding_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LithoOnboarding_Tests/Pods-LithoOnboarding_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		241815B1AA2B4DBA57364EE78E73E609 /* Build configuration list for PBXNativeTarget "Prelude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ED3770465A4EBF0D93E33F276FF3BC6 /* Debug */,
+				7C5BFE65A0C16B775BB5A55588D1E3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C8D346680E3BF8E947BC68370960EB2 /* Build configuration list for PBXNativeTarget "fuikit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759919A8BBA847885880CFE398F54573 /* Debug */,
+				08E9D22F883AB1CBB5DE83C70B5FE0C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56355B85326FA43CE9F32EDC261CD3B4 /* Build configuration list for PBXNativeTarget "LithoOnboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25E38A3FF72CEC846A40D53BCE6CD8CF /* Debug */,
+				B194CE00217E79BFD056930258118570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D326F8897243B5E54E2C0278797E698 /* Build configuration list for PBXNativeTarget "Pods-LithoOnboarding_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C989F09B6634D0B22791B1101CEC29 /* Debug */,
+				60E9DEB8B5370BB2824646B5E1C83D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		947FB3ADB2A0A874424F2FD921521449 /* Build configuration list for PBXNativeTarget "Pods-LithoOnboarding_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B97D3097F6FAA066C83D26ECEBC517 /* Debug */,
+				5471881F1600877A30EACB65F2F012E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F2EDC446D596382C603BC0D5C00788C /* Debug */,
+				D4205A4ADADF2F5456CB5CC65218B09E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5952B26FB246B67D9192931712BD3D5 /* Build configuration list for PBXNativeTarget "LithoOperators" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659632C20002DE8AC851ACD6048DA5B1 /* Debug */,
+				72AADDCC020F498E1DD3B05BA4F185E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F94E9707A2FAD24961E933B6EBC4A767 /* Build configuration list for PBXNativeTarget "LithoUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				568968D2FAAE9DEBD16393E6873C10A7 /* Debug */,
+				33CDE96CEDEEC69F489EAEE6CCD6FC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

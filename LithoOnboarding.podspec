@@ -28,9 +28,12 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/cjc8/LithoOnboarding.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'LithoOnboarding/Classes/**/*'
+  s.dependency 'LithoOperators'
+  s.dependency 'fuikit/Core'
+  s.dependency 'LithoUtils'
   
   # s.resource_bundles = {
   #   'LithoOnboarding' => ['LithoOnboarding/Assets/*.png']
