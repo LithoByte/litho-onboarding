@@ -16,38 +16,17 @@ import LithoUtils
     var onBoardingViews: [UIView] { get set }
     var validate: (() -> Bool) { get set }
     var selectedIndex: Int { get set }
+    var completion: (() -> Void)? { get set }
     
     @objc func setUpSwipeRecognizers()
     @objc func swipeLeft()
     @objc func swipeRight()
+    @objc func proceed()
 }
 
-open class OnboardingViewController: FUIViewController, OnboardingViewControllerProtocol {
-    public var validate: (() -> Bool) = returnValue(true)
-    
-    public var onBoardingViews: [UIView] = []
-    public var selectedIndex: Int = 0
-    
-    public var completion: (() -> Void)?
-    
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        onBoardingViews.forEach(set(\UIView.isHidden, true) <> self.view.addSubview)
-        if onBoarding() {
-            onBoardingViews |> (indexer(index: selectedIndex) >?> set(\UIView.isHidden, false))
-        }
-    }
-    
-    open override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        setUpSwipeRecognizers()
-        if onBoarding() {
-            onBoardingViews |> (indexer(index: selectedIndex) >?> set(\UIView.isHidden, false))
-        }
-    }
-    
-    @objc open func setUpSwipeRecognizers() {
-        self.onBoardingViews.forEach({
+extension OnboardingViewControllerProtocol {
+    public func setUpSwipeRecognizers() {
+        onBoardingViews.forEach({
             let tap = UITapGestureRecognizer(target: self, action: #selector(swipeLeft))
             let left = UISwipeGestureRecognizer(target: self, action: #selector(swipeRight))
             left.direction = .left
@@ -56,25 +35,7 @@ open class OnboardingViewController: FUIViewController, OnboardingViewController
         })
     }
     
-    open func setValidate(validator: @escaping () -> Bool) {
-        self.validate = validator
-    }
-    
-    open func proceed() {
-        if selectedIndex < onBoardingViews.count - 1 {
-            onBoardingViews[selectedIndex].isHidden = true
-            onBoardingViews[selectedIndex + 1].isHidden = false
-            view.bringSubviewToFront(onBoardingViews[selectedIndex + 1])
-            onBoardingViews[selectedIndex] |> ~>complete
-            selectedIndex += 1
-        } else {
-            completion?()
-            onBoardingViews[selectedIndex].isHidden = true
-            selectedIndex += 1
-        }
-    }
-    
-    @objc open func swipeLeft() {
+    func swipeLeft() {
         if onBoarding() {
             if selectedIndex < onBoardingViews.count - 1 {
                 if validateSelectedView(onBoardingViews[selectedIndex]) {
@@ -91,7 +52,20 @@ open class OnboardingViewController: FUIViewController, OnboardingViewController
         }
     }
     
-    @objc open func swipeRight() {
+    func proceed() {
+        if selectedIndex < onBoardingViews.count - 1 {
+            onBoardingViews[selectedIndex].isHidden = true
+            onBoardingViews[selectedIndex + 1].isHidden = false
+            onBoardingViews[selectedIndex] |> ~>complete
+            selectedIndex += 1
+        } else {
+            completion?()
+            onBoardingViews[selectedIndex].isHidden = true
+            selectedIndex += 1
+        }
+    }
+    
+    func swipeRight() {
         if onBoarding() {
             if let onboarding = onBoardingViews[selectedIndex] as? BaseOnboardingView {
                if onboarding.shouldAllowBack && selectedIndex != 0 {
@@ -109,6 +83,88 @@ open class OnboardingViewController: FUIViewController, OnboardingViewController
         }
     }
 }
+
+public func onBoardingSetUpSwipe(_ vc: OnboardingViewControllerProtocol) {
+    vc.setUpSwipeRecognizers()
+}
+
+//open class OnboardingViewController: FUIViewController, OnboardingViewControllerProtocol {
+//    public var validate: (() -> Bool) = returnValue(true)
+//
+//    public var onBoardingViews: [UIView] = []
+//    public var selectedIndex: Int = 0
+//
+//    public var completion: (() -> Void)?
+//
+//    open override func viewDidLoad() {
+//        super.viewDidLoad()
+//        onBoardingViews.forEach(set(\UIView.isHidden, true) <> self.view.addSubview)
+//        if onBoarding() {
+//            onBoardingViews |> (indexer(index: selectedIndex) >?> set(\UIView.isHidden, false))
+//        }
+//    }
+//
+//    open override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        setUpSwipeRecognizers()
+//        if onBoarding() {
+//            onBoardingViews |> (indexer(index: selectedIndex) >?> set(\UIView.isHidden, false))
+//        }
+//    }
+//
+//    open func setValidate(validator: @escaping () -> Bool) {
+//        self.validate = validator
+//    }
+//
+//    open func proceed() {
+//        if selectedIndex < onBoardingViews.count - 1 {
+//            onBoardingViews[selectedIndex].isHidden = true
+//            onBoardingViews[selectedIndex + 1].isHidden = false
+//            view.bringSubviewToFront(onBoardingViews[selectedIndex + 1])
+//            onBoardingViews[selectedIndex] |> ~>complete
+//            selectedIndex += 1
+//        } else {
+//            completion?()
+//            onBoardingViews[selectedIndex].isHidden = true
+//            selectedIndex += 1
+//        }
+//    }
+//
+//    @objc open func swipeLeft() {
+//        if onBoarding() {
+//            if selectedIndex < onBoardingViews.count - 1 {
+//                if validateSelectedView(onBoardingViews[selectedIndex]) {
+//                    onBoardingViews[selectedIndex].isHidden = true
+//                    onBoardingViews[selectedIndex + 1].isHidden = false
+//                    onBoardingViews[selectedIndex] |> ~>complete
+//                    selectedIndex += 1
+//                }
+//            } else if validate() && validateSelectedView(onBoardingViews[selectedIndex]) {
+//                completion?()
+//                onBoardingViews[selectedIndex].isHidden = true
+//                selectedIndex += 1
+//            }
+//        }
+//    }
+//
+//    @objc open func swipeRight() {
+//        if onBoarding() {
+//            if let onboarding = onBoardingViews[selectedIndex] as? BaseOnboardingView {
+//               if onboarding.shouldAllowBack && selectedIndex != 0 {
+//                   onBoardingViews[selectedIndex].isHidden = true
+//                   onBoardingViews |> (indexer(index: selectedIndex - 1) >?> set(\.isHidden, false))
+//                   selectedIndex -= 1
+//               }
+//           } else {
+//               if selectedIndex > 0 {
+//                   onBoardingViews[selectedIndex].isHidden = true
+//                   onBoardingViews |> (indexer(index: selectedIndex - 1) >?> set(\.isHidden, false))
+//                   selectedIndex -= 1
+//               }
+//           }
+//        }
+//    }
+//}
 
 public let validateSelectedView: (UIView) -> Bool = ~>validate >>> coalesceNil(with: true)
 
@@ -173,7 +229,7 @@ public func configureOnboardingViewController<T>(vc: T, getter: @escaping (T) ->
     }
 }
 
-public func baseOnBoardingViewDidLoad<T>(vc: T) -> Void where T: OnboardingViewController {
+public func baseOnBoardingViewDidLoad<T>(vc: T) -> Void where T: OnboardingViewControllerProtocol & UIViewController {
     vc.onBoardingViews = [BaseOnboardingView(frame: vc.view.bounds)]
 }
 
@@ -211,7 +267,7 @@ public func baseOnboardingWillAppear(_ vc: UIViewController) {
 }
 
 public func switchToNav(vc: UIViewController & OnboardingViewControllerProtocol) {
-    if let nav = vc.navigationController as? OnboardingNavigationController {
+    if let nav = vc.navigationController as? OnboardingViewControllerProtocol {
         (vc.onBoardingViews |> indexer(index: vc.selectedIndex)) |> (hide >||> ifExecute)
         // overriding default behavior
         (vc.onBoardingViews |> indexer(index: vc.selectedIndex + 1)) |> (hide >||> ifExecute)
@@ -219,101 +275,92 @@ public func switchToNav(vc: UIViewController & OnboardingViewControllerProtocol)
         showNavBar(vc)
         showNavBarFromTab(vc)
         nav.onBoardingViews[nav.selectedIndex] |> (show <> ~>set(\BaseOnboardingView.shouldAllowBack, false))
-        nav.view.bringSubviewToFront(nav.onBoardingViews[nav.selectedIndex])
+        //nav.view.bringSubviewToFront(nav.onBoardingViews[nav.selectedIndex])
     }
 }
 
 public func switchToVC(vc: UIViewController & OnboardingViewControllerProtocol) {
-    if let nav = vc.navigationController as? OnboardingNavigationController {
+    if let nav = vc.navigationController as? OnboardingViewControllerProtocol {
         vc.onBoardingViews[vc.selectedIndex] |> (show <> ~>set(\BaseOnboardingView.shouldAllowBack, false))
         hideTabBar(vc)
         hideNavBar(vc)
         hideNavBarFromTab(vc)
         nav.onBoardingViews[nav.selectedIndex] |> hide
-        // overriding default behavior
         (nav.onBoardingViews |> indexer(index: nav.selectedIndex + 1)) |> (hide >||> ifExecute)
     }
 }
 
-open class OnboardingNavigationController: UINavigationController, OnboardingViewControllerProtocol {
-    public var onBoardingViews: [UIView] = []
-    
-    public var validate: (() -> Bool) = returnValue(true)
-    var onBoardingCompletion: (() -> Void)?
-    
-    public var selectedIndex: Int = 0
-    
-    var onViewDidLayoutSubviews: ((OnboardingNavigationController) -> Void)?
-    
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    open override func viewDidLayoutSubviews() {
-        setUpSwipeRecognizers()
-    }
-    
-    public func setUpSwipeRecognizers() {
-        self.onBoardingViews.forEach({
-            let tap = UITapGestureRecognizer(target: self, action: #selector(swipeLeft))
-            let left = UISwipeGestureRecognizer(target: self, action: #selector(swipeRight))
-            left.direction = .left
-            $0.addGestureRecognizer(tap)
-            $0.addGestureRecognizer(left)
-        })
-    }
-    
-    public func swipeLeft() {
-        if selectedIndex < onBoardingViews.count - 1 {
-            if validateSelectedView(onBoardingViews[selectedIndex]) {
-                onBoardingViews[selectedIndex].isHidden = true
-                onBoardingViews[selectedIndex + 1].isHidden = false
-                view.bringSubviewToFront(onBoardingViews[selectedIndex + 1])
-                onBoardingViews[selectedIndex] |> ~>complete
-                selectedIndex += 1
-            }
-        } else if validate() && validateSelectedView(onBoardingViews[selectedIndex]) {
-            onBoardingCompletion?()
-            onBoardingViews[selectedIndex].isHidden = true
-            selectedIndex += 1
-        }
-    }
-    
-    open func proceed() {
-        if selectedIndex < onBoardingViews.count - 1 {
-            onBoardingViews[selectedIndex].isHidden = true
-            onBoardingViews[selectedIndex + 1].isHidden = false
-            view.bringSubviewToFront(onBoardingViews[selectedIndex + 1])
-            onBoardingViews[selectedIndex] |> ~>complete
-            selectedIndex += 1
-        } else {
-            onBoardingCompletion?()
-            onBoardingViews[selectedIndex].isHidden = true
-            selectedIndex += 1
-        }
-    }
-    
-    public func swipeRight() {
-        if let onboarding = onBoardingViews[selectedIndex] as? BaseOnboardingView {
-            if onboarding.shouldAllowBack && selectedIndex != 0 {
-                onBoardingViews[selectedIndex].isHidden = true
-                onBoardingViews |> (indexer(index: selectedIndex - 1) >?> set(\.isHidden, false))
-                selectedIndex -= 1
-            }
-        } else {
-            if selectedIndex != 0 {
-                onBoardingViews[selectedIndex].isHidden = true
-                onBoardingViews |> (indexer(index: selectedIndex - 1) >?> set(\.isHidden, false))
-                selectedIndex -= 1
-            }
-        }
-    }
-}
+//open class OnboardingNavigationController: UINavigationController, OnboardingViewControllerProtocol {
+//    public var completion: (() -> Void)?
+//
+//    public var onBoardingViews: [UIView] = []
+//
+//    public var validate: (() -> Bool) = returnValue(true)
+//    var onBoardingCompletion: (() -> Void)?
+//
+//    public var selectedIndex: Int = 0
+//
+//    var onViewDidLayoutSubviews: ((OnboardingNavigationController) -> Void)?
+//
+//    open override func viewDidLoad() {
+//        super.viewDidLoad()
+//    }
+//
+//    open override func viewDidLayoutSubviews() {
+//        setUpSwipeRecognizers()
+//    }
+//
+//    public func swipeLeft() {
+//        if selectedIndex < onBoardingViews.count - 1 {
+//            if validateSelectedView(onBoardingViews[selectedIndex]) {
+//                onBoardingViews[selectedIndex].isHidden = true
+//                onBoardingViews[selectedIndex + 1].isHidden = false
+//                view.bringSubviewToFront(onBoardingViews[selectedIndex + 1])
+//                onBoardingViews[selectedIndex] |> ~>complete
+//                selectedIndex += 1
+//            }
+//        } else if validate() && validateSelectedView(onBoardingViews[selectedIndex]) {
+//            onBoardingCompletion?()
+//            onBoardingViews[selectedIndex].isHidden = true
+//            selectedIndex += 1
+//        }
+//    }
+//
+//    open func proceed() {
+//        if selectedIndex < onBoardingViews.count - 1 {
+//            onBoardingViews[selectedIndex].isHidden = true
+//            onBoardingViews[selectedIndex + 1].isHidden = false
+//            view.bringSubviewToFront(onBoardingViews[selectedIndex + 1])
+//            onBoardingViews[selectedIndex] |> ~>complete
+//            selectedIndex += 1
+//        } else {
+//            onBoardingCompletion?()
+//            onBoardingViews[selectedIndex].isHidden = true
+//            selectedIndex += 1
+//        }
+//    }
+//
+//    public func swipeRight() {
+//        if let onboarding = onBoardingViews[selectedIndex] as? BaseOnboardingView {
+//            if onboarding.shouldAllowBack && selectedIndex != 0 {
+//                onBoardingViews[selectedIndex].isHidden = true
+//                onBoardingViews |> (indexer(index: selectedIndex - 1) >?> set(\.isHidden, false))
+//                selectedIndex -= 1
+//            }
+//        } else {
+//            if selectedIndex != 0 {
+//                onBoardingViews[selectedIndex].isHidden = true
+//                onBoardingViews |> (indexer(index: selectedIndex - 1) >?> set(\.isHidden, false))
+//                selectedIndex -= 1
+//            }
+//        }
+//    }
+//}
 
 
 
-public func bindSwitchToVC(onBoardingView: BaseOnboardingView, vc: UIViewController & OnboardingViewControllerProtocol) {
-    onBoardingView.completion = vc *> switchToVC
+public func bindSwitchToVC(onBoardingView: BaseOnboardingView, vc: UIViewController) {
+    onBoardingView.completion = vc *> ~>switchToVC
 }
 
 

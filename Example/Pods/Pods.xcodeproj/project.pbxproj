@@ -40,6 +40,7 @@
 		5977569D55E02D656CC0FD68939C1FC2 /* FUIImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4E272F8CF0DC57302A61DB2D8D9DC /* FUIImagePickerDelegate.swift */; };
 		5B38B754C0234F7836CA6BA48A16D6BD /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE721CF9F281F97F3A886ABBF720268 /* UIColor+hex.swift */; };
 		5DBF5326A4A41B7784F1598F508BE967 /* Prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C82E5BCADEA88E8C70FFF7B67FD9E3 /* Prelude.swift */; };
+		6496783826C30C3600A53C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6496783726C30C3600A53C9A /* Assets.xcassets */; };
 		668F6F7F53794507D58FFC19E6EBADAB /* LithoOperators-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36820DBB73C0205D3F4A4B09D1A045 /* LithoOperators-dummy.m */; };
 		66CC6E3C4F7D95A4941AA88C0561EC40 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803E008658324BC6A219BB4AB494244 /* Curry.swift */; };
 		68161A5E63A922A13AC084A13F35C00A /* fuikit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D473DF89F3A64B2072A896FA06247A84 /* fuikit.framework */; };
@@ -241,6 +242,7 @@
 		613474421597CD1115AA83EFE96B44CC /* fuikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.release.xcconfig; sourceTree = "<group>"; };
 		62EC048F3F0E4700339EB619CD14504E /* LithoOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LithoOperators.swift; path = Sources/LithoOperators/Classes/LithoOperators.swift; sourceTree = "<group>"; };
 		641257B7BDDCD4BA8DDF6A36291A1148 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		6496783726C30C3600A53C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64F8CAA620B79DF3DAFB4DFCB16A3CA6 /* LithoOperators-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LithoOperators-umbrella.h"; sourceTree = "<group>"; };
 		69C5F5086BC60416A31E886EE6669522 /* BaseOnboardingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = BaseOnboardingView.xib; path = LithoOnboarding/Classes/Views/BaseOnboardingView.xib; sourceTree = "<group>"; };
 		6A040B34B45889DAE7FDD9E889DAD1F4 /* LithoUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoUtils.debug.xcconfig; sourceTree = "<group>"; };
@@ -636,6 +638,7 @@
 				3AE255E4200AF21D1BD1AA1943562B1D /* Styles.swift */,
 				8AE98D03E44ACFEB4F0F11BD43F9D427 /* Pod */,
 				2B694984B722EB9A13CB3A0A7BBF6045 /* Support Files */,
+				6496783726C30C3600A53C9A /* Assets.xcassets */,
 			);
 			name = LithoOnboarding;
 			path = ../..;
@@ -1049,6 +1052,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6496783826C30C3600A53C9A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

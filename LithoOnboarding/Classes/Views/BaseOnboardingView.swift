@@ -251,6 +251,3 @@ public func switchToNav(vc: UIViewController & OnboardingViewControllerProtocol,
         viewWithTagVC(nav, tag)?.isHidden = false
     }
 }
-
-
-
