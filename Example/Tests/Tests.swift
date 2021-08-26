@@ -1,5 +1,4 @@
 import XCTest
-import LithoOnboarding
 
 class Tests: XCTestCase {
     

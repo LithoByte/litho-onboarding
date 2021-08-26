@@ -1,0 +1,33 @@
+{
+  "name": "LithoOnboarding",
+  "version": "0.1.0",
+  "summary": "A short description of LithoOnboarding.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/cjc8/LithoOnboarding",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cjc8": "cjc8@williams.edu"
+  },
+  "source": {
+    "git": "https://github.com/cjc8/LithoOnboarding.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "LithoOnboarding/Classes/**/*",
+  "dependencies": {
+    "LithoOperators": [
+
+    ],
+    "fuikit/Core": [
+
+    ],
+    "LithoUtils": [
+
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module LithoOnboarding {
+  umbrella header "LithoOnboarding-umbrella.h"
+
+  export *
+  module * { export * }
+}
