@@ -12,8 +12,8 @@ import Prelude
 import Combine
 import LithoUtils
 
-@objc public protocol OnboardingViewControllerProtocol {
-    var onBoardingViews: [UIView] { get set }
+@objc public protocol OnboardingViewControllerProtocol where Self: UIViewController {
+    var onBoardingViews: [BaseOnboardingView] { get set }
     var validate: (() -> Bool) { get set }
     var selectedIndex: Int { get set }
     var completion: (() -> Void)? { get set }
@@ -36,15 +36,15 @@ extension OnboardingViewControllerProtocol {
     }
     
     func swipeLeft() {
-        if onBoarding() {
+        if UserDefaults.standard.isOnboarding {
             if selectedIndex < onBoardingViews.count - 1 {
-                if validateSelectedView(onBoardingViews[selectedIndex]) {
+                if onBoardingViews[selectedIndex].validate() {
                     onBoardingViews[selectedIndex].isHidden = true
                     onBoardingViews[selectedIndex + 1].isHidden = false
-                    onBoardingViews[selectedIndex] |> ~>complete
+                    onBoardingViews[selectedIndex].completion?()
                     selectedIndex += 1
                 }
-            } else if validate() && validateSelectedView(onBoardingViews[selectedIndex]) {
+            } else if validate() && onBoardingViews[selectedIndex].validate() {
                 completion?()
                 onBoardingViews[selectedIndex].isHidden = true
                 selectedIndex += 1
@@ -56,7 +56,7 @@ extension OnboardingViewControllerProtocol {
         if selectedIndex < onBoardingViews.count - 1 {
             onBoardingViews[selectedIndex].isHidden = true
             onBoardingViews[selectedIndex + 1].isHidden = false
-            onBoardingViews[selectedIndex] |> ~>complete
+            onBoardingViews[selectedIndex].completion?()
             selectedIndex += 1
         } else {
             completion?()
@@ -66,20 +66,13 @@ extension OnboardingViewControllerProtocol {
     }
     
     func swipeRight() {
-        if onBoarding() {
-            if let onboarding = onBoardingViews[selectedIndex] as? BaseOnboardingView {
-               if onboarding.shouldAllowBack && selectedIndex != 0 {
-                   onBoardingViews[selectedIndex].isHidden = true
-                   onBoardingViews |> (indexer(index: selectedIndex - 1) >?> set(\.isHidden, false))
-                   selectedIndex -= 1
-               }
-           } else {
-               if selectedIndex > 0 {
-                   onBoardingViews[selectedIndex].isHidden = true
-                   onBoardingViews |> (indexer(index: selectedIndex - 1) >?> set(\.isHidden, false))
-                   selectedIndex -= 1
-               }
-           }
+        if UserDefaults.standard.isOnboarding {
+            let onboarding = onBoardingViews[selectedIndex]
+            if onboarding.shouldAllowBack && selectedIndex != 0 {
+                onBoardingViews[selectedIndex].isHidden = true
+                onBoardingViews[selectedIndex - 1].isHidden = false
+                selectedIndex -= 1
+            }
         }
     }
 }
@@ -166,40 +159,23 @@ public func onBoardingSetUpSwipe(_ vc: OnboardingViewControllerProtocol) {
 //    }
 //}
 
-public let validateSelectedView: (UIView) -> Bool = ~>validate >>> coalesceNil(with: true)
-
-public func setOnboardingViewWithPublisher(view: BaseOnboardingView, pub: AnyPublisher<Bool, Never>?, cancelBag: inout Set<AnyCancellable>) {
-    pub?.map(returnValue).sink(receiveValue: view >|> setter(\BaseOnboardingView.validate)).store(in: &cancelBag)
+extension UserDefaults {
+  var isOnboarding: Bool {
+    UserDefaults.standard.bool(forKey: "isOnboarding")
+  }
 }
 
-public func setOnboardingViewWithPublisher(view: BaseOnboardingView, pub: AnyPublisher<(), Never>?, cancelBag: inout Set<AnyCancellable>) {
-    pub?.map(returnValue(true)).map(returnValue).sink(receiveValue: view >|> setter(\BaseOnboardingView.validate)).store(in: &cancelBag)
-}
+public func onBoardingViewDidLayoutSubviews<T: OnboardingViewControllerProtocol>(
+  layout: OnboardingLayout,
+  at index: Int,
+  padding: CGFloat? = nil
+) -> (T) -> Void {
 
-public func setOnboardingViewWithPublisher<T>(view: BaseOnboardingView, pub: AnyPublisher<T, Never>?, condition: @escaping (T) -> Bool, cancelBag: inout Set<AnyCancellable>) {
-    pub?.map(condition).map(returnValue).sink(receiveValue: view >|> setter(\BaseOnboardingView.validate)).store(in: &cancelBag)
-}
-
-public func validate(onboarding: BaseOnboardingView) -> Bool {
-    return onboarding.validate()
-}
-
-public func complete(onboarding: BaseOnboardingView) {
-    onboarding.completion?()
-}
-
-public let onBoarding: () -> Bool = "isOnboarding" *> UserDefaults.standard.bool
-
-public func onBoardingViewDidLayoutSubviews<T: OnboardingViewControllerProtocol & UIViewController, U>(keypath: KeyPath<T, U?>, layout: OnboardingLayout, at index: Int, padding: CGFloat? = nil) -> (T) -> Void {
-    return ((^keypath >?> { $0 as? UIView }, index) >||> (padding >||||> configureOnboardingViewController)) <> ((^\T.onBoardingViews >>> indexer(index: index)) >?> ~>(layout >||> layoutOnboardingView)) <> (rotateSetter(getter: ^keypath >?> ~>(paddingSetter(padding: padding)), index: index))
-}
-
-public func paddingSetter(padding: CGFloat?) -> (UIView) -> CGRect {
-    return ^\UIView.frame >>> { $0.insetBy(dx: padding ?? .zero, dy: padding ?? .zero) }
-}
-
-public func onBoardingViewDidLayoutSubviews<T: OnboardingViewControllerProtocol & UIViewController>(getter: @escaping (T) -> CGRect?, layout: OnboardingLayout, at index: Int, padding: CGFloat? = nil) -> (T) -> Void {
-    return ((getter, index) >||> (padding >||||> configureOnboardingViewController)) <> ((^\T.onBoardingViews  >>> indexer(index: index)) >?> ~>(layout >||> layoutOnboardingView)) <> (rotateSetter(getter: getter, index: index))
+    return { vc in
+        configureOnboardingViewController(vc: vc, getter: { $0.view.frame }, index: index, padding: padding)
+        layoutOnboardingView(view: vc.onBoardingViews[index], with: layout)
+        rotateSetter(getter: { $0.view.frame.insetBy(dx: padding ?? 0, dy: padding ?? 0) }, index: index)(vc)
+    }
 }
 
 public func indexer<T>(index: Int) -> ([T]) -> T? {
@@ -211,17 +187,17 @@ public func indexer<T>(index: Int) -> ([T]) -> T? {
     }
 }
 
-public func configureOnboardingViewController<T>(vc: T, getter: @escaping (T) -> UIView?, index: Int, padding: CGFloat? = nil) where T: OnboardingViewControllerProtocol & UIViewController {
-    if onBoarding() {
-        if let rectToMask = getter(vc)?.frame.insetBy(dx: padding ?? 0, dy: padding ?? 0) {
-            vc.onBoardingViews.forEach({ $0.frame = vc.view.bounds })
-            vc.onBoardingViews |> (indexer(index: index) >?> ~>(rectToMask >||> setMask))
-        }
-    }
-}
+//public func configureOnboardingViewController<T>(vc: T, getter: @escaping (T) -> UIView?, index: Int, padding: CGFloat? = nil) where T: OnboardingViewControllerProtocol {
+//    if UserDefaults.standard.isOnboarding {
+//        if let rectToMask = getter(vc)?.frame.insetBy(dx: padding ?? 0, dy: padding ?? 0) {
+//            vc.onBoardingViews.forEach({ $0.frame = vc.view.bounds })
+//            vc.onBoardingViews |> (indexer(index: index) >?> ~>(rectToMask >||> setMask))
+//        }
+//    }
+//}
 
-public func configureOnboardingViewController<T>(vc: T, getter: @escaping (T) -> CGRect?, index: Int, padding: CGFloat? = nil) where T: OnboardingViewControllerProtocol & UIViewController {
-    if onBoarding() {
+public func configureOnboardingViewController<T>(vc: T, getter: @escaping (T) -> CGRect?, index: Int, padding: CGFloat? = nil) where T: OnboardingViewControllerProtocol {
+    if UserDefaults.standard.isOnboarding {
         if let rectToMask = getter(vc)?.insetBy(dx: padding ?? 0, dy: padding ?? 0) {
             vc.onBoardingViews.forEach({ $0.frame = vc.view.bounds })
             vc.onBoardingViews |> (indexer(index: index) >?> ~>(rectToMask >||> setMask))
@@ -229,7 +205,7 @@ public func configureOnboardingViewController<T>(vc: T, getter: @escaping (T) ->
     }
 }
 
-public func baseOnBoardingViewDidLoad<T>(vc: T) -> Void where T: OnboardingViewControllerProtocol & UIViewController {
+public func baseOnBoardingViewDidLoad<T>(vc: T) -> Void where T: OnboardingViewControllerProtocol {
     vc.onBoardingViews = [BaseOnboardingView(frame: vc.view.bounds)]
 }
 
@@ -259,7 +235,7 @@ public func accessibilityIdentifier(from text: String) -> String {
 }
 
 public func baseOnboardingWillAppear(_ vc: UIViewController) {
-    if onBoarding() {
+    if UserDefaults.standard.isOnboarding {
         hideTabBar(vc)
         hideNavBarFromTab(vc)
         hideNavBar(vc)

@@ -190,7 +190,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03257136580122EE0423A57946B36548 /* OnboardingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = LithoOnboarding/Classes/Views/OnboardingViewController.swift; sourceTree = "<group>"; };
+		03257136580122EE0423A57946B36548 /* OnboardingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = LithoOnboarding/Classes/Views/OnboardingViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		0356FA02DBBBDCEF08D71A2687A79687 /* LithoOnboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoOnboarding.release.xcconfig; sourceTree = "<group>"; };
 		06001691B4BDF1005D8438260913237A /* Pods-LithoOnboarding_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LithoOnboarding_Tests-dummy.m"; sourceTree = "<group>"; };
 		06AECA3BA394EF855EA676D4CEE97819 /* LithoOperators.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoOperators.release.xcconfig; sourceTree = "<group>"; };
